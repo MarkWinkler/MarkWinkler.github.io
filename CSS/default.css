@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	height: 2400px;
+}
+
+main {
+	float:right;
+	width: 85%;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+nav {
+	background-color: #00002d;
+	overflow-x: hidden;
+	position: fixed;
+	height: 100%;
+	width: 12em;
+	z-index: 100%;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #fffff1;
+	background-color: #00002d;
+	display: block;
+	padding: 1em 1em 1em 1em;
+	transition: .5s;
+}
+
+nav a:hover {
+	color: #001;
+	background-color: #f4f4ff;
+}
+
+
+@media screen and (min-width: 500px) {
+	nav {
+		width: 20%
+	}
+	
+}
+
+
+@media screen and (min-width: 1000px) {
+	nav {
+		width: 12%;
+	}
+	
+}
