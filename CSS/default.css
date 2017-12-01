@@ -5,6 +5,7 @@ body {
 
 main {
 	padding: .2em;
+	text-align: center;
 }
 
 h1 {
@@ -28,27 +29,32 @@ nav a {
 }
 
 
-
-
 nav a:hover {
 	color: #001;
 	background-color: #f4f4ff;
 }
 
 
+.profile-picture {
+	width: 100px;
+	height: 113px;
+	border-radius: 50%;
+	padding-top: 1em;
+}
+
 
 @media screen and (min-width: 600px) {
 	main {
 		float: right;
-		width: 80%;
+		width: 75%;
 	}
 	
 	nav {
-		background-color: #00002d;
+		background-color: #000059;
 		overflow-x: hidden;
 		position: fixed;
 		height: 100%;
-		width: 25%;
+		width: 20%;
 		z-index: 100%;
 	}
 	nav a {
@@ -60,8 +66,22 @@ nav a:hover {
 
 
 @media screen and (min-width: 1000px) {
+	main {
+		float: right;
+		width: 75%;
+	}
+	
 	nav {
-		width: 12%;
+		background-color: #00002d;
+		overflow-x: hidden;
+		position: fixed;
+		height: 100%;
+		width: 20%;
+		z-index: 100%;
+	}
+	nav a {
+		display: block;
+		font-size: 1.5em;
 	}
 	
 }
