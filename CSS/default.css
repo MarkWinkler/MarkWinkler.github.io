@@ -4,8 +4,7 @@ body {
 }
 
 main {
-	float:right;
-	width: 85%;
+	padding: .2em;
 }
 
 h1 {
@@ -14,22 +13,22 @@ h1 {
 
 nav {
 	background-color: #00002d;
-	overflow-x: hidden;
-	position: fixed;
 	height: 100%;
-	width: 12em;
-	z-index: 100%;
+	width: 100%;
 }
 
 nav a {
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 1.2em;
+	text-align: center;
 	color: #fffff1;
 	background-color: #00002d;
-	display: block;
-	padding: 1em 1em 1em 1em;
+	padding: 0 .5em;
 	transition: .5s;
 }
+
+
+
 
 nav a:hover {
 	color: #001;
@@ -37,9 +36,24 @@ nav a:hover {
 }
 
 
-@media screen and (min-width: 500px) {
+
+@media screen and (min-width: 600px) {
+	main {
+		float: right;
+		width: 80%;
+	}
+	
 	nav {
-		width: 20%
+		background-color: #00002d;
+		overflow-x: hidden;
+		position: fixed;
+		height: 100%;
+		width: 25%;
+		z-index: 100%;
+	}
+	nav a {
+		display: block;
+		font-size: 1.5em;
 	}
 	
 }
