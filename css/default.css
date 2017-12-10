@@ -3,13 +3,22 @@ body {
 	height: 2400px;
 }
 
-main {
-	padding: .2em;
+header {
 	text-align: center;
 }
 
+main {
+	padding: .2em;
+}
+
 h1 {
+	text-align: center;
 	font-family: sans-serif;
+	margin-bottom: 4em;
+}
+
+h2 {
+	text-align: center;
 }
 
 nav {
@@ -19,38 +28,69 @@ nav {
 }
 
 nav a {
+	display: block;
 	text-decoration: none;
+	text-align: center;
 	font-size: 1.2em;
 	text-align: center;
 	color: #fffff1;
 	background-color: #00002d;
 	padding: 0 .5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.8em;
+  border-bottom: 1px solid #777c7c;
 	transition: .5s;
 }
 
-
-nav a:hover {
-	color: #001;
-	background-color: #f4f4ff;
+nav a#first:hover {
+	background-color: #00910c;
+}
+nav a#second:hover {
+	background-color: #0097a8;
+}
+nav a#third:hover {
+	background-color: #480091;
+}
+nav a#fourth:hover {
+	background-color: #915700;
 }
 
+nav li:last-child a {
+	border-bottom: none;
+}
+
+ul {
+	list-style: none;
+	background: #00002d;
+	padding: 5px 0;
+	margin: 0 0;
+}
 
 .profile-picture {
 	width: 100px;
 	height: 113px;
 	border-radius: 50%;
-	padding-top: 1em;
+	margin-top: 1.5em;
+}
+
+.center-image {
+	text-align: center;
+}
+
+section {
+	font-size: 1.2em;
+	padding: 0 0.4em;
 }
 
 
 @media screen and (min-width: 600px) {
 	main {
 		float: right;
-		width: 75%;
+		width: 78%;
 	}
 	
 	nav {
-		background-color: #000059;
 		overflow-x: hidden;
 		position: fixed;
 		height: 100%;
@@ -60,6 +100,18 @@ nav a:hover {
 	nav a {
 		display: block;
 		font-size: 1.5em;
+			display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	}
+	
+	.menu-button {
+		display: none;
+	}
+	
+	section {
+		width: 70%;
+		margin: 0 auto;
 	}
 	
 }
@@ -68,11 +120,10 @@ nav a:hover {
 @media screen and (min-width: 1000px) {
 	main {
 		float: right;
-		width: 75%;
+		width: 78%;
 	}
 	
 	nav {
-		background-color: #00002d;
 		overflow-x: hidden;
 		position: fixed;
 		height: 100%;
@@ -80,8 +131,20 @@ nav a:hover {
 		z-index: 100%;
 	}
 	nav a {
-		display: block;
-		font-size: 1.5em;
+	display: block;
+	font-size: 1.5em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	}
+	
+	.menu-button {
+		display: none;
+	}
+	
+	section {
+		width: 60%;
+		margin: 0 auto;
 	}
 	
 }
