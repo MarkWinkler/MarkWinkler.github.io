@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	height: 2400px;
 	font-family: 'Open Sans', sans-serif;
+	background-color: #fffffd;
 }
 
 header {
@@ -99,6 +100,7 @@ hr {
 	font-size: 1.7em;
 	font-family: 'Indie Flower', cursive;
 	margin-top: 1.5em;
+	padding-top: .2em;
 }
 
 .introduction {

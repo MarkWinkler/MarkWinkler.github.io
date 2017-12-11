@@ -16,6 +16,12 @@ Tests
 Describing tests with code examples.
 
 
+References
+------------------------------------------------------------
+Popular breakpoints:
+https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
+
+
 License
 ------------------------------------------------------------
 For any possible license detailes.
