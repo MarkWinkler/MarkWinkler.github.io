@@ -1,8 +1,8 @@
 # Portfolio
 
-------------------------------------------------------------
+
 ## Synopsis
-------------------------------------------------------------
+
 
 This website is an **online portfolio** about me; Mark Winkler.
 It contains information on my past and current experiences,
@@ -12,23 +12,23 @@ Please enjoy!
 
 
 ## API Reference Docs
-------------------------------------------------------------
+
 
 
 ## Tests
-------------------------------------------------------------
+
 Describing tests with code examples.
 
 
 ## References
-------------------------------------------------------------
-- Source used to select the breakpoints for development:
-https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
 
-- Fonts used on the website:
-https://fonts.google.com
+- Source used to select the breakpoints for development: https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
+
+- All fonts defined to be used on the website come from: https://fonts.google.com
+
+- SVG icon: https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon
 
 
 ## License
-------------------------------------------------------------
+
 For any possible license detailes.

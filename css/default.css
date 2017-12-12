@@ -7,10 +7,16 @@ body {
 
 header {
 	text-align: center;
+	padding-top: 2em;
 }
 
 main {
 	padding: .2em;
+}
+
+svg {
+	height: 32px; 
+	width: 32px;
 }
 
 h1 {
@@ -24,10 +30,36 @@ h2 {
 	margin-top: 1em;
 }
 
+#menu {
+	text-decoration: none;
+	padding: 1.25em 1.25em 0 1.25em;
+	margin: 1em;
+	text-align: right;
+  background: #c9ffe6;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#menu:hover {
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.show-menu {
+  display: block;
+}
+
+#nav-menu {
+	background-color: #000002;
+}
+
 nav {
-	background-color: #00002d;
+	display: none;
 	height: 100%;
 	width: 100%;
+/*
+		position: absolute;
+	height: auto;
+*/
 }
 
 nav a {
@@ -38,7 +70,6 @@ nav a {
 	text-align: center;
 	color: #fffff1;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #00002d;
 	padding: 0 .5em;
   line-height: 1.8em;
   border-bottom: 1px solid #777c7c;
@@ -64,7 +95,6 @@ nav li:last-child a {
 
 ul {
 	list-style: none;
-	background: #00002d;
 	padding: 5px 0;
 	margin: 0 0;
 }
@@ -74,22 +104,6 @@ section {
 	padding: 0 0.4em;
 }
 
-
-table {
-	margin: 2.5em 0;
-}
-
-th {
-	padding-right: .5em;
-}
-
-td {
-	padding: .2em 0;
-}
-
-hr {
-	width: 65%;
-}
 
 #introduction-background {
 	font-size: 1.2em;
@@ -113,14 +127,37 @@ hr {
 	width: 100px;
 	height: 113px;
 	border-radius: 50%;
-	margin-top: 1.5em;
+	margin-top: 3em;
 }
 
 .center-image {
 	text-align: center;
 }
 
+table {
+	margin: 2.5em 0;
+}
+
+th {
+	padding-right: .5em;
+}
+
+td {
+	padding: .2em 0;
+}
+
+hr {
+	width: 65%;
+}
+
+
+
+
 @media screen and (min-width: 500px) {
+	header {
+		padding: 0;
+	}
+	
 	main {
 		float: right;
 		width: 68%;
@@ -131,7 +168,12 @@ hr {
 	margin-top: 4em;
 	}
 	
+	#nav-menu {
+	background-color: #00002d;
+	}
+	
 	nav {
+		display: block;
 		overflow-x: hidden;
 		position: fixed;
 		height: 100%;
@@ -139,8 +181,8 @@ hr {
 		z-index: 100%;
 	}
 	nav a {
-		font-size: 1.2em;
 		display: flex;
+		font-size: 1.2em;
 		flex-flow: row wrap;
 		justify-content: space-around;
 		padding: .5em 0;
@@ -163,7 +205,9 @@ hr {
 		padding: .2em;
 	}
 	
-
+	 #menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
