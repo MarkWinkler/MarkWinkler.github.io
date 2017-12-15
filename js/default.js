@@ -18,5 +18,31 @@
 			this.style.background = "#7affc1"; // Brighter highlighted colour.
     }
   }
-
-})();
+	
+})();	
+	
+	
+	let modal = document.getElementById("myModal");
+	let btn = document.getElementById("myBtn");
+	let span = document.getElementsByClassName("close")[0];
+	
+	btn.addEventListener("click", togglePopup);
+	span.addEventListener("click", spanClose);
+	
+	function togglePopup(){
+			modal.classList.add("show-popup")
+		}
+	
+	
+	function spanClose() {
+			modal.classList.remove("show-popup")
+	}
+	
+	
+	window.document.addEventListener("click", function(event){
+    if (event.target == modal) {
+        modal.classList.remove("show-popup")
+    }
+})
+	
+	

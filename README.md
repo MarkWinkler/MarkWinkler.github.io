@@ -28,6 +28,8 @@ Describing tests with code examples.
 
 - SVG icon: https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon
 
+- Modal/popup window: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+
 
 ## License
 
