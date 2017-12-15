@@ -31,6 +31,7 @@
 	
 	function togglePopup(){
 			modal.classList.add("show-popup")
+		return false
 		}
 	
 	
