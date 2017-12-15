@@ -25,6 +25,13 @@ h1 {
 }
 
 h2 {
+	font-size: 1.7em;
+	font-family: 'Indie Flower', cursive;
+	margin-top: 1.5em;
+	padding-top: .2em;
+}
+
+h3 {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 1em;
@@ -104,23 +111,12 @@ section {
 	padding: 0 0.4em;
 }
 
-
-#introduction-background {
-	font-size: 1.2em;
-	background-color: #ffffed;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.introduction-title {
-	font-size: 1.7em;
-	font-family: 'Indie Flower', cursive;
-	margin-top: 1.5em;
-	padding-top: .2em;
-}
-
 .introduction {
 	font-size: 1.4em;
 	font-family: 'Indie Flower', cursive;
+	padding: 0 0.4em;
+	background-color: #ffffed;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .profile-picture {
@@ -130,9 +126,22 @@ section {
 	margin-top: 3em;
 }
 
+.logos {
+	padding-bottom: 1em;
+}
+
+
+.logo-section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 .center-image {
 	text-align: center;
 }
+
+
 
 table {
 	margin: 2.5em 0;
@@ -164,7 +173,7 @@ hr {
 		margin-top: 4em;
 	}
 	
-	h2 {
+	h3 {
 	margin-top: 4em;
 	}
 	
@@ -201,13 +210,15 @@ hr {
 		margin-top: 4em;
 	}
 	
-	.introduction {
-		padding: .2em;
-	}
-	
 	 #menu {
     display: none;
   }
+	
+	.logo-section {
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-direction: row;
+}
 }
 
 @media screen and (min-width: 768px) {
