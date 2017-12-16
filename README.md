@@ -16,11 +16,12 @@ Please enjoy!
 Original idea with simple wireframes.
 
 For Mobile:
-![Mobile Wireframehttps://github.com/MarkWinkler/MarkWinkler.github.io/tree/master/images/Mobile-Wireframejpg "Mobile Wireframe"
+
+![Mobile Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg)
 
 For Desktop:
-https://github.com/MarkWinkler/MarkWinkler.github.io/tree/master/images/Desktop-wireframejpg "Desktop Wireframe"
 
+![Desktop Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg)
 
 
 ## Tests
