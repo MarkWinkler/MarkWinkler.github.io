@@ -17,16 +17,32 @@ Original idea with simple wireframes.
 
 For Mobile:
 
-![Mobile Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg)
+<img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" width="572">
+
 
 For Desktop:
 
-![Desktop Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg)
+<img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg" width="572">
 
 
 ## Tests
 
-Describing tests with code examples.
+### Markdown testing
+One particular challenge was making the images work in the mardown.
+First I used normal markdown syntax:
+`![Mobile Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg)`
+This seemed to do the trick, only it was making the images larger despite my commits, where I specifically made 
+the images smaller.
+
+To overcome this I have looked online and found forum posts stating that HTML works withink GiTHubs Readme file.
+So I went ahead and changed the syntax to the following:
+`<img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" width="572">`
+The width directly corresponds to the actual widht of the image.
+
+### HTML and CSS testing
+
+### JavaScript testing
+
 
 
 ## References
