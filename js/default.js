@@ -22,27 +22,27 @@
 })();	
 	
 	
-	let modal = document.getElementById("myModal");
-	let btn = document.getElementById("myBtn");
+	let popup = document.getElementById("popup-id");
+	let openPopup = document.getElementById("employer1");
 	let span = document.getElementsByClassName("close")[0];
 	
-	btn.addEventListener("click", togglePopup);
+	openPopup.addEventListener("click", togglePopup);
 	span.addEventListener("click", spanClose);
 	
 	function togglePopup(){
-			modal.classList.add("show-popup")
+			popup.classList.add("show-popup")
 		return false
 		}
 	
 	
 	function spanClose() {
-			modal.classList.remove("show-popup")
+			popup.classList.remove("show-popup")
 	}
 	
 	
 	window.document.addEventListener("click", function(event){
-    if (event.target == modal) {
-        modal.classList.remove("show-popup")
+    if (event.target == popup) {
+        popup.classList.remove("show-popup")
     }
 })
 	

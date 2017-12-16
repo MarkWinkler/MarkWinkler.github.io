@@ -26,9 +26,9 @@ Describing tests with code examples.
 
 - All fonts defined to be used on the website come from: https://fonts.google.com
 
-- SVG icon: https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon
+- SVG used for the mobile "menu" icon: https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon
 
-- Modal/popup window: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+- Modal/popup window taken from w3school and reworked to fit the needs of my portfolio: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 
 
 ## License

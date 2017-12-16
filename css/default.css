@@ -37,6 +37,10 @@ h3 {
 	margin-top: 1em;
 }
 
+h4, h5 {
+	text-align: center;
+}
+
 #menu {
 	text-decoration: none;
 	padding: 1.25em 1.25em 0 1.25em;
@@ -100,7 +104,7 @@ nav li:last-child a {
 	border-bottom: none;
 }
 
-ul {
+.nav {
 	list-style: none;
 	padding: 5px 0;
 	margin: 0 0;
@@ -138,6 +142,11 @@ section {
 	flex-direction: column;
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+}
+
 .show-description {
   display: block;
 }
@@ -146,7 +155,9 @@ section {
 	text-align: center;
 }
 
-.modal {
+.popup {
+	font-size: 1.1em;
+	font-family: 'Forum', cursive;
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1;
@@ -159,7 +170,7 @@ section {
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal-content {
+.popup-content {
 	background-color: #fefefe;
 	margin: auto;
 	padding: 20px;
@@ -263,6 +274,11 @@ hr {
 	.logos {
 		width: 90%;
 	}
+	
+	.popup {
+		padding-top: 20%;
+	}
+	
 }
 
 @media screen and (min-width: 768px) {
