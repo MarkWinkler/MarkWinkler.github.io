@@ -43,7 +43,7 @@
 	
 	window.document.addEventListener("click", function(event){ // entire website has an event listener.
   	if (event.target == popup) {
-			popup.classList.remove("show-popup") // If clicking outside the popup, close it.
+			popup.classList.remove("show-popup") // If clicking outside popup-content (on popup around it), close it.
     }
 	})
 	
