@@ -11,7 +11,15 @@ pure `HTML5`, `CSS3` and `JavaScript ES6`.
 Please enjoy!
 
 
-## API Reference Docs
+## Development
+
+Original idea with simple wireframes.
+
+For Mobile:
+https://github.com/MarkWinkler/MarkWinkler.github.io/tree/master/images/Mobile-Wireframejpg "Mobile Wireframe"
+
+For Desktop:
+https://github.com/MarkWinkler/MarkWinkler.github.io/tree/master/images/Desktop-Wireframejpg "Desktop Wireframe"
 
 
 
