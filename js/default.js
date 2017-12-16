@@ -42,8 +42,8 @@
 	
 	
 	window.document.addEventListener("click", function(event){ // entire website has an event listener.
-  	if (event.target == popup) {
-			popup.classList.remove("show-popup") // If clicking outside popup-content (on popup around it), close it.
+  	if (event.target == popup) {						// If clicking outside popup-content 
+			popup.classList.remove("show-popup") 	//(on popup which is around it), close it.
     }
 	})
 	
@@ -51,9 +51,9 @@
 
 // GM Employement Details
 (function(){
-	let popup = document.getElementById("popup-id2"); // Linking it to the next id.
-	let openPopup = document.getElementById("employer2"); // Linking it to the next employer.
-	let span = document.getElementsByClassName("close2")[0];
+	let popup = document.getElementById("popup-id2"); 				// Linking it to the next id.
+	let openPopup = document.getElementById("employer2"); 		// Linking it to the next employer.
+	let span = document.getElementsByClassName("close2")[0]; 	// Linking to the next close.
 	
 	openPopup.addEventListener("click", togglePopup);
 	span.addEventListener("click", spanClose);
@@ -79,9 +79,9 @@
 
 // CODE Employement Details
 (function(){
-	let popup = document.getElementById("popup-id3"); // Linking it to the next id.
-	let openPopup = document.getElementById("employer3"); // Linking it to the next employer.
-	let span = document.getElementsByClassName("close3")[0];
+	let popup = document.getElementById("popup-id3"); 				// Linking it to the next id.
+	let openPopup = document.getElementById("employer3"); 		// Linking it to the next employer.
+	let span = document.getElementsByClassName("close3")[0]; 	// Linking to the next close.
 	
 	openPopup.addEventListener("click", togglePopup);
 	span.addEventListener("click", spanClose);

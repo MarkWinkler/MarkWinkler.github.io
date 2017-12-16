@@ -31,13 +31,15 @@ Describing tests with code examples.
 
 ## References
 
-- Source used to select the breakpoints for development: https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
+All these numbers are highlighted in the relevant comments.
 
-- All fonts defined to be used on the website come from: https://fonts.google.com
+- [1] Source used to select the breakpoints for development: https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
 
-- SVG used for the mobile "menu" icon: https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon
+- [2] All fonts defined to be used on the website come from: https://fonts.google.com
 
-- Modal/popup window taken from w3school and reworked to fit the needs of my portfolio: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+- [3] SVG used for the mobile "menu" icon: https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon
+
+- [4] Modal/popup window taken from w3school and reworked to fit the needs of my portfolio: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 
 
 ## License
