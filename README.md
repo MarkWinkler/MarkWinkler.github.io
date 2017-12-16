@@ -18,12 +18,13 @@ Original idea with simple wireframes.
 For Mobile:
 
 <img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" width="572">
+![Mobile Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg)
 
 
 For Desktop:
 
 <img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg" width="572">
-
+![Desktop Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg)
 
 ## Tests
 
