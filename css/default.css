@@ -34,7 +34,8 @@ h2 {
 h3 {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	margin-top: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 h4, h5 {
@@ -133,8 +134,9 @@ section {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-
+.linkedin-profile {
+	padding-top: 0;
+}
 
 .profile-picture {
 	width: 100px;
@@ -159,6 +161,10 @@ section {
 	height: 146px;
 }
 
+.linkedin-picture {
+	width: 80%;
+}
+
 /*
 .show-description {
   display: block;
@@ -167,6 +173,30 @@ section {
 
 .center-image {
 	text-align: center;
+}
+
+table {
+	width: 100%;
+	padding: 0 .5em .5em .5em;
+	background-color: #f7f7f7;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+td, th {
+	text-align: center;
+	padding: .2em;
+}
+
+.btn {
+	font-size: 1.1em;
+	text-decoration: none;
+	background-color: #0077B5;
+	color: #fcfcfc;
+	padding: .4em .1em .4em .1em; 
+}
+
+.btn:hover {
+	background-color: #003e5e;
 }
 
 
@@ -278,8 +308,8 @@ section {
 		margin-top: 4em;
 	}
 	
-	h3 {
-	margin-top: 4em;
+	section {
+	padding-top: 4em;
 	}
 	
 	#nav-menu {
@@ -332,8 +362,16 @@ section {
 	.employer-picture {
 		width: 599px;
 		height: 337px;
-}
+	}
 	
+	.linkedin-picture {
+		width: auto;
+		height: auto;
+	}
+	
+	.btn {
+		padding: .8em .3em .6em .3em; 
+	}
 }
 
 @media screen and (min-width: 768px) {
