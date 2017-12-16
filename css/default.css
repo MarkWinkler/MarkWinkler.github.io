@@ -41,6 +41,15 @@ h4, h5 {
 	text-align: center;
 }
 
+h6 {
+	text-align: center;
+}
+
+
+
+
+
+
 #menu {
 	text-decoration: none;
 	padding: 1.25em 1.25em 0 1.25em;
@@ -67,10 +76,6 @@ nav {
 	display: none;
 	height: 100%;
 	width: 100%;
-/*
-		position: absolute;
-	height: auto;
-*/
 }
 
 nav a {
@@ -110,10 +115,15 @@ nav li:last-child a {
 	margin: 0 0;
 }
 
+
+
+
+
 section {
 	font-size: 1.3em;
 	padding: 0 0.4em;
 }
+
 
 .introduction {
 	font-size: 1.4em;
@@ -123,6 +133,9 @@ section {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+
+
 .profile-picture {
 	width: 100px;
 	height: 113px;
@@ -130,30 +143,38 @@ section {
 	margin-top: 3em;
 }
 
-.logos {
-	width: 85%;
-	padding-bottom: 1em;
-}
-
-
 #logo-section {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
-figure {
-	margin: 0;
-	padding: 0;
+.logos {
+	width: 85%;
+	padding-bottom: 1em;
 }
 
+.employer-picture {
+	width: 260px;
+	height: 146px;
+}
+
+/*
 .show-description {
   display: block;
 }
+*/
 
 .center-image {
 	text-align: center;
 }
+
+
+
+
+
+
+
 
 .popup {
 	font-size: 1.1em;
@@ -170,8 +191,25 @@ figure {
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.popup-content {
-	background-color: #fefefe;
+
+.popup-content-lasa {
+	background-color: #e8fff4;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.popup-content-gm {
+	background-color: #e2edff;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.popup-content-code {
+	background-color: #eaffe0;
 	margin: auto;
 	padding: 20px;
 	border: 1px solid #888;
@@ -185,7 +223,7 @@ figure {
 .close {
 	color: #aaaaaa;
 	float: right;
-	font-size: 28px;
+	font-size: 1em;
 	font-weight: bold;
 }
 
@@ -196,21 +234,37 @@ figure {
 	cursor: pointer;
 }
 
-table {
-	margin: 2.5em 0;
+.close2 {
+	color: #aaaaaa;
+	float: right;
+	font-size: 1em;
+	font-weight: bold;
 }
 
-th {
-	padding-right: .5em;
+.close2:hover,
+.close2:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-td {
-	padding: .2em 0;
+.close3 {
+	color: #aaaaaa;
+	float: right;
+	font-size: 1em;
+	font-weight: bold;
 }
 
-hr {
-	width: 65%;
+.close3:hover,
+.close3:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
+
+
+
+
 
 
 @media screen and (min-width: 500px) {
@@ -275,9 +329,10 @@ hr {
 		width: 90%;
 	}
 	
-	.popup {
-		padding-top: 20%;
-	}
+	.employer-picture {
+		width: 599px;
+		height: 337px;
+}
 	
 }
 
