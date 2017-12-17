@@ -30,7 +30,7 @@ This idea was then taken on, and development begun. I started development by ens
 
 Responsiveness was the key. Throughout the development, whenever a new style was created, it was tested across large variety of resolutions from 2k down to mobile sizes. This ensured that breakpoints are applied to any new styles as required.
 
-Validation was run against the HTML multiple times, with only a single time highlighting a warning, which was a missing header tag from a section.
+Validation was run against the HTML multiple times, with only two times highlighting a warnings, which were missing header tag from a section and table row and coloumn count not matching.
 
 The rest of the process was an incremental development. Make a few changes, then use live preview or refresh the page to ensure it worked as intended.
 
