@@ -51,7 +51,6 @@ h3 {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 2em;
-	margin-bottom: 2em;
 }
 
 h4, h5 {
@@ -256,6 +255,7 @@ td, th {
 	background-color: #0077B5;
 	color: #fcfcfc;
 	padding: .4em .1em .4em .1em; 
+	border-radius: 5%;
 }
 
 .btn:hover {
@@ -449,7 +449,7 @@ Reference [1]
 	}
 	
 	.btn {
-		padding: .8em .3em .6em .3em; 
+		padding: .8em .4em .8em .4em; 
 	}
 }
 
