@@ -25,16 +25,27 @@ For Desktop:
 
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg" align="center" width="572"></a>
 
+
+This idea was then taken and development begun. I started development by ensuring HTML5 semantics are used throughout. My aim was to minimise additional divs and aim to stick to semantics as much as possible.
+
+Responsiveness was the key. Throughout the development, whenever a new style was created, it was tested across large variety of resolutions from 2k down to mobile sizes. This ensured that breakpoints are applied to any new styles as required.
+
+Validation was run against the HTML multiple times, with only a single time highlighting a warning, which was a missing header tag from a section.
+
+### Javascript Development
+
+Javascript was rather difficult, as I do not have much experience in using it. Luckily using the lab example (which I have implemented for the menu), I was able to use the same principle to create popup windows. This included the highly encouraged eventlisteners and adding classes to the classlist to display the window. 
+
 ## Tests
 
 ### Markdown testing
-One particular challenge was making the images work in the mardown.
+One challenge was making the images work in the markdown.
 First I used normal markdown syntax:
 `![Mobile Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg)`
 This seemed to do the trick, only it was making the images larger despite my commits, where I specifically made 
 the images smaller.
 
-To overcome this I have looked online and found forum posts stating that HTML works withink GiTHubs Readme file.
+To overcome this I have looked online and found forum posts stating that HTML works within GiTHub's Readme file.
 So I went ahead and changed the syntax to the following:
 `<img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" width="572">`
 The width directly corresponds to the actual widht of the image.
@@ -44,9 +55,26 @@ Turned out that this was not the solution and people on forums should not be tru
 
 ### HTML and CSS testing
 
+One of the ideas, I have tested was highlighting each section in separate colours. This could have looked nice, but I have had issues with trying to get section background to go full width because of restrictions (navbar, set page width etc).
+
+There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily correct. I have now realised, that this could have been the perfect opportunity to make use of GitHub branching, but unfortunately, I did not think of that at the time.
+
+The rest of the process was an incremental development. Make a few changes, then use live preview or refresh the page to ensure it worked as intended.
+
 ### JavaScript testing
 
+For the testing of Javascript, I used the online example of W3C, which presented inline scripts, onClicks and separate snippets. 
+I implemented this with eventlisteners and linked it to relevant sections.
+I knew I need to have a separate id for `popup` and `openPopup`, but I have experienced with the `span`. This was a `getElementsByClassName` and I thought I can include this once and make use of it for all 3 popup windows. This did not work and unfortunately, I had to use `close1`, `close2` and `close3` (along with the duplication of CSS style). This was not ideal and I am sure there are better solutions, however, I was glad that I made it work nonetheless.
 
+
+### User testing
+
+I have passed my website along to family members. They tested on laptop and phones. The feedback received was positive. They really liked the simplicity of the website. There was no problem with navigation or opening any of the additional windows. 
+
+One of the highlighted elements that they really liked was how much the website changed on larger devices and even on phones if it was tiled 90 degrees.
+
+A negative point highlighted, which I have missed was the main title of the page, was misspelt. Instead of Portfolio it was Portolio. Good thing that this was spotted, as somehow, I have missed that completely.
 
 ## References
 
@@ -63,4 +91,5 @@ All these numbers are highlighted in the relevant comments.
 
 ## License
 
-For any possible license detailes.
+Google fonts are license under Sil Open Font License (OFL), which makes them available for use even commercially:
+http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
