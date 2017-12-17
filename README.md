@@ -96,6 +96,9 @@ https://www.xml-sitemaps.com
 - [6] Accessiblity quick references:
 https://webaim.org/resources/quickref/
 
+- [7] keycode Deprecated:
+https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
+
 
 ## License
 
