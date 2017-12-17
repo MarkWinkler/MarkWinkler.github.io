@@ -132,7 +132,6 @@ nav a {
 	text-decoration: none;
 	text-align: center;
 	font-size: 1.2em;
-	text-align: center;
 	color: #fcfcfc;
 	font-family: 'Open Sans', sans-serif;
 	padding: 0 .5em;
@@ -142,16 +141,16 @@ nav a {
 }
 
 /* id's used to achieve different hover colours. */
-nav a#first:hover {
+nav #first:hover {
 	background-color: #00910c;
 }
-nav a#second:hover {
+nav #second:hover {
 	background-color: #0097a8;
 }
-nav a#third:hover {
+nav #third:hover {
 	background-color: #480091;
 }
-nav a#fourth:hover {
+nav #fourth:hover {
 	background-color: #915700;
 }
 
@@ -214,7 +213,7 @@ section {
 
 
 @keyframes circleImage {
-	0%	{ border-radius: 0%; opacity: 0 } /* Opacity and border radius combined. */
+	0%	{ border-radius: 0; opacity: 0 } /* Opacity and border radius combined. */
 	100% { border-radius: 50%; opacity: 1}
 }
 
@@ -446,8 +445,8 @@ Reference [1]
 		position: fixed;
 		height: 100%;
 		width: 30%;
-		z-index: 100%;
 	}
+	
 	nav a {
 		display: flex;
 		font-size: 1.2em;
