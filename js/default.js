@@ -22,7 +22,10 @@
 })();	
 	
 	
+
 // LASA Employement Details
+
+
 (function(){
 	let popup = document.getElementById("popup-id1"); // The div class that includes all the popup content.
 	let openPopup = document.getElementById("employer1"); // LASA Employer
@@ -31,61 +34,36 @@
 	openPopup.addEventListener("click", togglePopup); // Adding Event Listener to the logo.
 	span.addEventListener("click", spanClose); // Adding Event Listener to the close x.
 	
+	
+	
 	// Open popup, by clicking on the logo.
+	
 	function togglePopup(){
 		popup.classList.add("show-popup") // Add class "show-popup" which ovverrides the display none to display block.
 	}
 	
+	
+	
 	// Close window with x, located on the top right.
+	
 	function spanClose() {
 		popup.classList.remove("show-popup") // Remove class "show-popup", reverting back to display none.
 	}
 	
 	
 	
-//	
-//	window.addEventListener('onkeydown', (evt) => {
-//		if (keyName = 'Escape') {
-//			popup.classList.remove("show-popup")
-//		}
-//	}
-//	
-//	
-//	window.addEventListener("keypress", function(evt){
-//		if (evt.key == 'Escape') {
-//			popup.classList.remove("show-popup")
-//		}
-//	})
-	
-	
-	
-	
-//	function closeEscape(evt) {
-//		if (evt.key == 'Escape') {
-//			popup.classList.remove("show-popup")
-//		}
-//	}
-//	window.addEventListener('onkeydown', function(evt) => {
-//													if (evt.key = 'Escape') {
-//														popup.classList.remove("show-popup")
-//													}
-//												})
-// WORKS, but only with one popup.
-//		document.onkeydown = function(evt) {
-//			if (evt.key == 'Escape') {
-//				popup.classList.remove("show-popup")
-//			}
-//		}
-	
 	// Close window with escape key
+	
 	window.document.addEventListener('keydown', function(evt) { // Accessibility feature
 		if (evt.key == 'Escape' || evt.keyCode == 27) {	// If escape is pressed or keycode 27 (escape) Reference [7]
 			popup.classList.remove("show-popup")					// Close window.
 		} 																							// Keycode is deprecated, but still included it with a logical or
 	})																								// in case some users visiting the site will use an old browser.
 	
+	
 		
 	// Close window by clicking outside it.
+	
 	window.document.addEventListener("click", function(event){ // entire window has a click event listener.
   	if (event.target == popup) {						// If clicking outside popup-content 
 			popup.classList.remove("show-popup") 	//(on popup which is around it), close it.
@@ -95,6 +73,8 @@
 	
 	
 })();
+
+
 
 // GM Employement Details
 (function(){
