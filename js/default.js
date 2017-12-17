@@ -20,7 +20,7 @@
   }
 	
 })();	
-
+	
 	
 // LASA Employement Details
 (function(){
@@ -30,6 +30,7 @@
 
 	openPopup.addEventListener("click", togglePopup); // Adding Event Listener to the logo.
 	span.addEventListener("click", spanClose); // Adding Event Listener to the close x.
+	window.addEventListener("keypress", closeEscape, false);
 	
 	function togglePopup(){
 		popup.classList.add("show-popup") // Add class "show-popup" which ovverrides the display none to display block.
@@ -40,12 +41,25 @@
 		popup.classList.remove("show-popup") // Remove class "show-popup", reverting back to display none.
 	}
 	
+	function closeEscape(evt) {
+		if (evt.key == 'Escape') {
+			popup.classList.remove("show-popup")
+		}
+	}
+	
+//		document.onkeydown = function(evt) {
+//			if (evt.key == 'Escape') {
+//				popup.classList.remove("show-popup")
+//			}
+//		}
 	
 	window.document.addEventListener("click", function(event){ // entire website has an event listener.
   	if (event.target == popup) {						// If clicking outside popup-content 
 			popup.classList.remove("show-popup") 	//(on popup which is around it), close it.
     }
+		
 	})
+	
 	
 })();
 
@@ -67,15 +81,20 @@
 		popup.classList.remove("show-popup")
 	}
 	
+//		document.onkeydown = function(evt) {
+//			if (evt.key == 'Escape') {
+//				popup.classList.remove("show-popup")
+//			}
+//		}
 	
 	window.document.addEventListener("click", function(event){
   	if (event.target == popup) {
 			popup.classList.remove("show-popup") 
     }
 	})
+
 	
 })();
-
 
 // CODE Employement Details
 (function(){
@@ -95,6 +114,11 @@
 		popup.classList.remove("show-popup")
 	}
 	
+//		document.onkeydown = function(evt) {
+//			if (evt.key == 'Escape') {
+//				popup.classList.remove("show-popup")
+//			}
+//		}
 	
 	window.document.addEventListener("click", function(event){
   	if (event.target == popup) {

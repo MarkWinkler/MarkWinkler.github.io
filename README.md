@@ -59,6 +59,8 @@ One of the ideas, I have tested was highlighting each section in separate colour
 
 There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily correct. I have now realised, that this could have been the perfect opportunity to make use of GitHub branching, but unfortunately, I did not think of that at the time.
 
+What I used branching for was the attempt to add the escape key to close the popup windows.
+
 The rest of the process was an incremental development. Make a few changes, then use live preview or refresh the page to ensure it worked as intended.
 
 ### JavaScript testing
@@ -78,7 +80,7 @@ A negative point highlighted, which I have missed was the main title of the page
 
 ## References
 
-All these numbers are highlighted in the relevant comments.
+1-4 are highlighted in relevant comments.
 
 - [1] Source used to select the breakpoints for development: https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
 
@@ -90,6 +92,9 @@ All these numbers are highlighted in the relevant comments.
 
 - [5] Sitemap generated with XML-Sitemaps:
 https://www.xml-sitemaps.com
+
+- [6] Accessiblity quick references:
+https://webaim.org/resources/quickref/
 
 
 ## License
