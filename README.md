@@ -88,6 +88,9 @@ All these numbers are highlighted in the relevant comments.
 
 - [4] Modal/popup window taken from w3school and reworked to fit the needs of my portfolio: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 
+- [5] Sitemap generated with XML-Sitemaps:
+https://www.xml-sitemaps.com
+
 
 ## License
 
