@@ -22,8 +22,6 @@ main {
 	padding: .2em;
 }
 
-
-
 /******************************
 				
 				Headings
@@ -38,6 +36,16 @@ as required.
 h1 {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
+	opacity: 0; /* Initial opacity */
+	animation-name: headerFade;
+	animation-duration: 4s; /* Lenght */
+	animation-iteration-count: 1; /* Play once */
+	animation-fill-mode: forwards; /* Keep Animation property on picutre */
+}
+
+@keyframes headerFade { /* Fade from full opacity to no opacity. */
+	0%	{ opacity: 0 }
+	100% { opacity: 1}
 }
 
 h2 {
@@ -61,6 +69,19 @@ h6 {
 	text-align: center;
 }
 
+hr {
+	opacity: 0; /* Opacity before animation */
+	animation-name: lineFade;
+	animation-duration: 2s; /* Lenght */
+	animation-iteration-count: 1; /* One iteration */
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s; /* Delay to make hr appear later */
+}
+
+@keyframes lineFade { /* Fade from full opacity to no opacity. */
+	0%	{ opacity: 0 }
+	100% { opacity: 1}
+}
 
 
 /******************************
@@ -160,6 +181,17 @@ introductory text effects.
 section {
 	font-size: 1.3em;
 	padding: 0 0.4em;
+	opacity: 0;  /* Initial opacity */
+	animation-name: sectionFade;
+	animation-duration: 2s;	/* Lenght */
+	animation-iteration-count: 1; /* Play once */
+	animation-fill-mode: forwards; /* Keep Animation property on picutre */
+	animation-delay: 1s; /* Delay to make profile picture visible first. */
+}
+
+@keyframes sectionFade { /* From 0 (invisible) to 1 (no opacity) */
+	0%	{ opacity: 0 }
+	100% { opacity: 1}
 }
 
 .center-image {
@@ -170,18 +202,18 @@ section {
 	width: 100px;
 	height: 113px;
 	margin-top: 3em;
+	opacity: 0;  /* Initial opacity */
 	animation-name: circleImage;
-	animation-duration: 4s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear; /* This ensures that the picture animates smoothly */
+	animation-duration: 2s; /* The lenght */
+	animation-iteration-count: 1; /* Play once */
 	animation-fill-mode: forwards; /* Keep Animation property on picutre */
 }
 
 
 
 @keyframes circleImage {
-	0%	{ border-radius: 0% }
-	100% { border-radius: 50%}
+	0%	{ border-radius: 0%; opacity: 0 } /* Opacity and border radius combined. */
+	100% { border-radius: 50%; opacity: 1}
 }
 
 
