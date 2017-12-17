@@ -41,6 +41,7 @@ h1 {
 	animation-duration: 4s; /* Lenght */
 	animation-iteration-count: 1; /* Play once */
 	animation-fill-mode: forwards; /* Keep Animation property on picutre */
+	animation-delay: 1s; /* One second delay */
 }
 
 @keyframes headerFade { /* Fade from full opacity to no opacity. */
@@ -204,9 +205,10 @@ section {
 	margin-top: 3em;
 	opacity: 0;  /* Initial opacity */
 	animation-name: circleImage;
-	animation-duration: 2s; /* The lenght */
+	animation-duration: 4s; /* The lenght */
 	animation-iteration-count: 1; /* Play once */
 	animation-fill-mode: forwards; /* Keep Animation property on picutre */
+	animation-delay: .5s; /* Slight delay to let image load in first. */
 }
 
 
