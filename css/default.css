@@ -233,40 +233,6 @@ section {
 
 /******************************
 				
-			Employement Section
-
-Defining the display of the
-three logos.
-
-The popup details, start
-further down, just before
-breakpoints.
-(Separated out third
-party helped code.)
-
-******************************/
-
-
-#logo-section {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-
-.logos {
-	width: 85%;
-	padding-bottom: 1em;
-}
-
-.employer-picture {
-	width: 260px;
-	height: 146px;
-}
-
-
-
-/******************************
-				
 				Contact Section
 
 Table and "button" used
@@ -275,9 +241,6 @@ contact section.
 
 ******************************/
 
-.linkedin-profile {
-	padding-top: 0;
-}
 
 .linkedin-picture {
 	width: 80%;
@@ -307,6 +270,40 @@ td, th {
 
 .btn:hover {
 	background-color: #003e5e;
+}
+
+
+
+/******************************
+				
+			Employement Section
+
+Defining the display of the
+three logos.
+
+The popup details, start
+further down, just before
+breakpoints.
+(Separated out third
+party helped code.)
+
+******************************/
+
+
+#logo-section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logos {
+	width: 85%;
+	padding-bottom: 1em;
+}
+
+.employer-picture {
+	width: 260px;
+	height: 146px;
 }
 
 
