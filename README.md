@@ -17,17 +17,11 @@ Original idea with simple wireframes.
 
 For Mobile:
 
-<img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" width="572">
-![Mobile Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg)
-
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" align="center" width="572"></a>
 
 
 
 For Desktop:
-
-<img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg" width="572">
-![Desktop Wireframe](https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg)
 
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg" align="center" width="572"></a>
 
@@ -44,6 +38,9 @@ To overcome this I have looked online and found forum posts stating that HTML wo
 So I went ahead and changed the syntax to the following:
 `<img src="(https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" width="572">`
 The width directly corresponds to the actual widht of the image.
+
+Turned out that this was not the solution and people on forums should not be trusted. The actual solution is as follows:
+`<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" align="center" width="572"></a>`
 
 ### HTML and CSS testing
 
