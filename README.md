@@ -32,6 +32,14 @@ Responsiveness was the key. Throughout the development, whenever a new style was
 
 Validation was run against the HTML multiple times, with only a single time highlighting a warning, which was a missing header tag from a section.
 
+### Branching 
+
+What I used branching for was the attempt to add the escape key to close the popup windows. I decided to use branching, as this development required a lot of changes to the JavaScript and I was not sure if I can make it work. Luckily I managed to, after working through a few possible solutions and have merged it with my `master` branch. 
+
+I have kept in the old branch for clarity.
+
+The rest of the process was an incremental development. Make a few changes, then use live preview or refresh the page to ensure it worked as intended.
+
 ### Javascript Development
 
 Javascript was rather difficult, as I do not have much experience in using it. Luckily using the lab example (which I have implemented for the menu), I was able to use the same principle to create popup windows. This included the highly encouraged eventlisteners and adding classes to the classlist to display the window. 
@@ -57,11 +65,9 @@ Turned out that this was not the solution and people on forums should not be tru
 
 One of the ideas, I have tested was highlighting each section in separate colours. This could have looked nice, but I have had issues with trying to get section background to go full width because of restrictions (navbar, set page width etc).
 
-There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily correct. I have now realised, that this could have been the perfect opportunity to make use of GitHub branching, but unfortunately, I did not think of that at the time.
+There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily correct. I have now realised, that this could have been the perfect opportunity to make use of GitHub branching again, but unfortunately, I did not think of that at the time.
 
-What I used branching for was the attempt to add the escape key to close the popup windows.
 
-The rest of the process was an incremental development. Make a few changes, then use live preview or refresh the page to ensure it worked as intended.
 
 ### JavaScript testing
 
