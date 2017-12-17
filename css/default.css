@@ -372,6 +372,7 @@ Reference [4]
 					Breakpoint
 
 	Larger than Mobile devices
+						500px
 
 Reference [1]
 ******************************/
@@ -448,9 +449,7 @@ Reference [1]
 		height: auto;
 	}
 	
-	.btn {
-		padding: .8em .4em .8em .4em; 
-	}
+	
 }
 
 
@@ -460,6 +459,7 @@ Reference [1]
 					Breakpoint
 
 					Tablet Size
+						768px
 	
 Reference [1]
 ******************************/
@@ -488,6 +488,7 @@ Reference [1]
 	.logos {
 		width: 100%;
 	}
+	
 }
 
 
@@ -497,6 +498,7 @@ Reference [1]
 					Breakpoint
 
 					Laptop Size
+						1024px
 	
 Reference [1]
 ******************************/
@@ -527,6 +529,10 @@ Reference [1]
 		width: 140px;
 		height: 158px;
 	}
+	
+	.btn {
+		padding: .8em .4em .8em .4em; 
+	}
 }
 
 
@@ -536,6 +542,7 @@ Reference [1]
 					Breakpoint
 
 		Small monitor/laptop Size
+						1366px
 	
 Reference [1]
 ******************************/
@@ -570,6 +577,7 @@ Reference [1]
 					Breakpoint
 
 					HD Size
+					1920px
 	
 Reference [1]
 ******************************/
