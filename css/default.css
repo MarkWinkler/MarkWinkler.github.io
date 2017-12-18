@@ -34,10 +34,11 @@ as required.
 
 
 h1 {
+	font-size: 1.6em;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	animation-name: headerFade;
-	animation-duration: 4s; /* Lenght */
+	animation-duration: 3s; /* Lenght */
 	animation-iteration-count: 1; /* Play once */
 }
 
@@ -48,13 +49,14 @@ h1 {
 }
 
 h2 {
-	font-size: 1.7em;
+	font-size: 1.3em;
 	font-family: 'Indie Flower', cursive;
 	margin-top: 1.5em;
 	padding-top: .2em;
 }
 
 h3 {
+	font-size: 1em;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 2em;
@@ -188,7 +190,7 @@ section {
 	font-size: 1.3em;
 	padding: 0 0.4em;
 	animation-name: sectionFade;
-	animation-duration: 3s;	/* Lenght */
+	animation-duration: 5s;	/* Lenght */
 	animation-iteration-count: 1; /* Play once */
 }
 
@@ -272,16 +274,17 @@ table {
 }
 
 td, th {
+	font-size: 1em;
 	text-align: center;
 	padding: .2em;
 }
 
 .btn {
-	font-size: 1.1em;
+	font-size: 1em;
 	text-decoration: none;
 	background-color: #0077B5;
 	color: #fcfcfc;
-	padding: .4em .1em .4em .1em; 
+	padding: .6em .2em .6em .2em; 
 	border-radius: 5%;
 }
 
@@ -426,20 +429,6 @@ Reference [4]
 	cursor: pointer;
 }
 
-
-/******************************
-				
-						Footer
-
-Simple footer.
-
-******************************/
-
-
-footer {
-
-}
-
 /******************************
 					
 					Breakpoint
@@ -451,6 +440,7 @@ Reference [1]
 ******************************/
 
 @media screen and (min-width: 500px) {
+	
 	header {
 		padding: 0;
 	}
@@ -485,6 +475,24 @@ Reference [1]
 		padding: .5em 0;
 	}
 	
+		
+	.profile-picture {
+		width: 110px;
+		height: 124px;
+	}
+	
+	h1 {
+		font-size: 1.7em;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
+	h3 {
+		font-size: 1.15em;
+	}
+	
 	section {
 		width: 90%;
 		margin: 0 auto;
@@ -504,6 +512,14 @@ Reference [1]
 	
 	#map {
 		width: 100%;
+	}
+	
+	td, th {
+		font-size: 1.1em;
+	}
+	
+	.btn {
+		font-size: 1.05em;
 	}
 	
 	.linkedin-picture {
@@ -541,6 +557,7 @@ Reference [1]
 ******************************/
 
 @media screen and (min-width: 768px) {
+	
 	main {
 		width: 78%;
 	}
@@ -553,12 +570,37 @@ Reference [1]
 	font-size: 1.4em;
 	}
 	
+	.profile-picture {
+		width: 120px;
+		height: 135px;
+	}
+	
+	h1 {
+		font-size: 1.9em;
+	}
+	
+	h2 {
+		font-size: 1.6em;
+	}
+	
+	h3 {
+		font-size: 1.3em;
+	}
+	
 	section {
 		width: 60%;
 	}
 	
 	hr {
 		width: 65%;
+	}
+	
+	td, th {
+		font-size: 1.2em;
+	}
+	
+	.btn {
+		font-size: 1.1em;
 	}
 	
 	.logos {
@@ -593,6 +635,19 @@ Reference [1]
 	font-size: 1.4em;
 	}
 	
+	.profile-picture {
+		width: 140px;
+		height: 158px;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+	
+	h2 {
+		font-size: 1.7em;
+	}
+	
 	section {
 		width: 60%;
 	}
@@ -601,9 +656,9 @@ Reference [1]
 		width: 65%;
 	}
 	
-	.profile-picture {
-		width: 140px;
-		height: 158px;
+	
+	td, th {
+		font-size: 1.3em;
 	}
 	
 	.btn {
@@ -635,6 +690,10 @@ Reference [1]
 	
 	nav a {
 	font-size: 1.5em;
+	}
+	
+	h1 {
+		font-size: 2.1em;
 	}
 	
 	section {
@@ -671,16 +730,16 @@ Reference [1]
 	font-size: 1.7em;
 	}
 	
+	h1 {
+		font-size: 2.2em;
+	}
+	
 	section {
 		max-width: 800px;
 	}
 	
 	hr {
 		max-width: 812px;
-	}
-	
-	#map {
-		height: 20em; /* Larger screen which means wider map */
 	}
 	
 }
