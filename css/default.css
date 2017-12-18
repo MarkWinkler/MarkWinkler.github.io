@@ -140,19 +140,28 @@ nav a {
 	transition: .5s;
 }
 
-/* id's used to achieve different hover colours. */
-nav #first:hover {
+/* The ul id used to achieve different hover colours accross navigation. */
+
+#nav-colours li:nth-child(1) a:hover {
 	background-color: #00910c;
 }
-nav #second:hover {
+
+#nav-colours li:nth-child(2) a:hover {
 	background-color: #0097a8;
 }
-nav #third:hover {
+
+#nav-colours li:nth-child(3) a:hover {
 	background-color: #480091;
 }
-nav #fourth:hover {
+
+#nav-colours li:nth-child(4) a:hover {
 	background-color: #915700;
 }
+
+#nav-colours li:nth-child(5) a:hover {
+	background-color: #00a584;
+}
+
 
 nav li:last-child a {
 	border-bottom: none;
@@ -226,6 +235,22 @@ section {
 	padding: 0 .5em .5em .5em;
 	background-color: #ffffed;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+/******************************
+				
+			Location Section
+
+		Using the Google API.
+
+******************************/
+
+#map {
+	height: 25em;
+	width: 80%; /* Mobile width */
+	margin: 0 auto; /* Centered */
 }
 
 
@@ -472,6 +497,15 @@ Reference [1]
     display: none;
   }
 	
+	#map {
+		width: 100%;
+	}
+	
+	.linkedin-picture {
+		width: auto;
+		height: auto;
+	}
+	
 	#logo-section {
 		justify-content: space-around;
 		align-items: flex-start;
@@ -486,12 +520,6 @@ Reference [1]
 		width: 599px;
 		height: 337px;
 	}
-	
-	.linkedin-picture {
-		width: auto;
-		height: auto;
-	}
-	
 	
 }
 

@@ -30,11 +30,12 @@
 			
 		<!-- Navigation -->
 			<nav id="nav-menu">
-				<ul class="nav">
-					<li><a href="#home" id="first">Home</a></li>
-					<li><a href="#about" id="second">About</a></li>
-					<li><a href="#contact" id="third">Contact</a></li>
-					<li><a href="#employement" id="fourth">Employement</a></li>
+				<ul class="nav" id="nav-colours">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#location">Location</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#employement">Employement</a></li>
 				</ul>
 			</nav>
 			
@@ -75,12 +76,21 @@
 				
 			</section>
 			
+					<!-- Location Section -->
+			<section>
+
+				<h3 id="location">Location</h3>
+				<h5>Please see the map below for UK location</h5>
+				
+				<div id="map"></div>
+				
+			</section>
 						
 		<!-- Contact Section -->
 			<section>
 
 				<h3 id="contact">Contact</h3>
-				<h5>You can get in touch through Linkedin:</h5>
+				<h5>You can get in touch through Linkedin</h5>
 				<table>
 					<tr>
 						<th>Mark Winkler</th>
@@ -221,6 +231,28 @@
 			
 		</main>
 		
+		<!-- Google Maps API section,  Reference [8]-->
+		<script>
+			function initMap() {
+				var myLocation = {lat: 52.6369, lng: -1.1398};
+
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 8,
+					center: myLocation
+				});
+
+				var marker = new google.maps.Marker({
+					position: myLocation,
+					map: map,
+					title: 'Leicester'
+				});
+			}
+    </script>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH88wretRm1nREBOFTDwAYv6ze-42-qKY&callback=initMap"
+    async defer></script>
+		
+		<!-- Default JavaScript section -->
 		<script src="js/default.js"></script>
 		
 	</body>

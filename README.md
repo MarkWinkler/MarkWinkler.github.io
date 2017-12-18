@@ -126,8 +126,14 @@ https://webaim.org/resources/quickref/
 - [7] keycode Deprecated:
 https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
 
+- [8] Google Maps API:
+https://developers.google.com/maps/documentation/javascript/tutorial
 
-## License
+
+## License Information
 
 Google fonts are license under Sil Open Font License (OFL), which makes them available for use even commercially:
 http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+Google Maps API free to use on websites that are free for anyone to use:
+https://developers.google.com/maps/pricing-and-plans/
