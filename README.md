@@ -30,7 +30,7 @@ This idea was then taken on, and development begun. I started development by ens
 
 Responsiveness was the key. Throughout the development, whenever a new style was created, it was tested across large variety of resolutions from 2k down to mobile sizes. This ensured that breakpoints are applied to any new styles as required.
 
-Validation was run against the HTML multiple times, with only two times highlighting a warnings, which were missing header tag from a section and table row and coloumn count not matching.
+Validation was run against the HTML multiple times, with only two times highlighting a warning, which were missing header tag from a section and table row and column count not matching.
 
 The rest of the process was an incremental development. Make a few changes, then use live preview or refresh the page to ensure it worked as intended, then commit changes to Git.
 
@@ -50,7 +50,7 @@ Reference [9]
 
 Proximity - I have made my website layout clear, with separate sections for each menu item. There is sufficient padding between sections and all titled with semantic elements, to ensure these are a clear break-down. I have tested the website without CSS too, and the flow of information would make it simple for a screen reader to process the information too.
 
-Alignment - This is demonstrated by the  profile picture at the top which is closely aligned to the header, suggesting Mark Winkler - Portfolio is related to the image. Further down the site Location and the short description is aligned to Google Maps and the same can be found for the Contact and employement sections.
+Alignment - This is demonstrated by the profile picture at the top which is closely aligned to the header, suggesting Mark Winkler - Portfolio is related to the image. Further down the site Location and the short description is aligned to Google Maps and the same can be found for the Contact and employment sections.
 
 Repetition - The first example of this is the navigation menu on the left which is consistently visible on larger devices. On top of this, other than the introduction section, headers, fonts, logo sizes are all kept the same to ensure the same experience throughout the portfolio.
 
@@ -78,16 +78,16 @@ Turned out that this was not the solution and people on forums should not be tru
 
 One of the ideas, I have tested was highlighting each section in separate colours. This could have looked nice, but I have had issues with trying to get section background to go full width because of restrictions (navbar, set page width etc).
 
-There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily good practice (lot of divs, positionings and wrapping of sections). I have now realised, that this could have been the perfect opportunity to make use of GitHub branching again, but unfortunately, I did not think of it at the time.
+There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily good practice (lot of div, positioning and wrapping of sections). I have now realised, that this could have been the perfect opportunity to make use of GitHub branching again, but unfortunately, I did not think of it at the time.
 
-I have run my CSS through csslint.net, Refernce [10]. It has produced just over 30 warnings and no errors.
-Initially it produced some additional warnings, where the warning was genuine, like defininf `text-align: center` twice for instance. Once these have been addressed, I was left with errors to do with ID's within selectors, which is a contrevorsial topic, Reference [11]. Another warning was not to use width and padding together, as it might make elements larger than expected. This is no problem as I have tested element sizes extensively to ensure smooth breakpoints and sensible sizes accross different window sizes. 
+I have run my CSS through csslint.net, Reference [10]. It has produced just over 30 warnings and no errors.
+Initially, it produced some additional warnings, where the warning was genuine, like definining `text-align: center` twice for instance. Once these have been addressed, I was left with errors to do with ID's within selectors, which is a controversial topic, Reference [11]. Another warning was not to use width and padding together, as it might make elements larger than expected. This is no problem as I have tested element sizes extensively to ensure smooth breakpoints and sensible sizes across different window sizes. 
 
 Error to do with multiple headings (h1, h2, h3), however these are to do with breakpoints and so are the "Too many font-size declarations." Overall the CSS lint "errors" that are left are, in my opinion, nothing to worry about.
 
 ### Animation testing
 The animations were tested on a variety of devices and browsers.
-Initially, I have implemented them with animation delays. The idea was to allow each animated element to fade in incrementally. The issue was that for this to work without elements appearing, dissappearing and appearing again, I had to set the opacity of the element to 0 and let the animation make it appear with `animation fill mode: forwards;`. 
+Initially, I have implemented them with animation delays. The idea was to allow each animated element to fade in incrementally. The issue was that for this to work without elements appearing, disappearing and appearing again, I had to set the opacity of the element to 0 and let the animation make it appear with `animation fill mode: forwards;`. 
 
 This seemed to work, however, after testing on older browsers I realised that the animations do not run and therefore the elements stay hidden. I then reworked the animation by increasing animation duration and setting the 0% and 50% to be `opacity: 0`. This has achieved the same effect as the animation delay, without having to set elements to be `opacity: 0` initially.
 
@@ -97,16 +97,17 @@ I have removed `border-radius` from profile picture animation, as it caused perf
 
 ### JavaScript testing
 
-For the testing of Javascript, I used the online example of W3C, which presented inline scripts, onClicks and separate snippets. 
-I implemented this with eventlisteners and linked it to relevant sections.
+For the testing of Javascript, I used the online example of W3Schools, which presented inline scripts, onClicks and separate snippets. 
+I implemented this with eventlisteners and linked it to relevant sections. There had to be a lot of changes, therefore adequate testing was required.
 
 I knew I needed to have a separate id for `popup` and `openPopup`, as each popup window would be different.
-`span` was a `getElementsByClassName` and I thought, I can include this once and make use of it for all 3 popup windows. This did not work and unfortunately, I had to use `close1`, `close2` and `close3` (along with the duplication of CSS style). This was not ideal, and I am sure there are better solutions, however, I was glad that I made it work nonetheless.
+
+`span` was a `getElementsByClassName` and I thought, I can include this once, then make use of it for all 3 popup windows. This did not work and unfortunately, I had to use `close1`, `close2` and `close3` (along with the duplication of CSS style). This was not ideal, and I am sure there are better solutions, however, I was glad that I made it work nonetheless.
 
 
 The other testing was to do with the branching section. Where users could press "escape" on their keyboards to close the popup window. There were various solutions tested and eventually I came up with the solution by following the already created spans javascript code.
 
-I had to ensure that these windows were sufficiently tested, so I ensured all combinations are exhausted. Some of this included:
+I had to ensure that these windows were sufficiently tested, so my aim was for all combinations to be exhausted. Some of this included:
 
 - Closing popup by clicking outside of it.
 - Closing popup by clicking on the span.
@@ -128,9 +129,9 @@ Overall, I covered a lot of different scenarios and they have worked just as int
 
 I have passed my website along to family members. They tested on laptop and phones. The feedback received was positive. They really liked the simplicity of the website. There was no problem with navigation or opening any of the additional windows. 
 
-One of the highlighted elements that they really liked was how much the website changed on larger devices and even on phones if it was tiled 90 degrees. The different colours for menu items was praised and the simpicity of layout and amount of information was liked.
+One of the highlighted elements that they really liked was how much the website changed on larger devices and even on phones if it was tiled 90 degrees. The different colours for menu items was praised and the simplicity of layout and amount of information was liked.
 
-A negative point highlighted, which I have missed was the main title of the page, was misspelt. Instead of Portfolio it was Portolio. Good thing that this was spotted, as somehow, I have missed that completely. Another negative point was that the `border-radius` animation seemed to be slow. I then deducted that this type of anmation is perhaps a bit too much to include and fading in the elements would be enough.
+A negative point highlighted, which I have missed was the main title of the page, was misspelt. Instead of Portfolio it was Portolio. Good thing that this was spotted, as somehow, I have missed that completely. Another negative point was that the `border-radius` animation seemed to be slow. I then deducted that this type of animation is perhaps a bit too much to include and fading in the elements would be enough.
 
 ## References
 
@@ -164,6 +165,9 @@ http://csslint.net/
 
 - [11] Discussion on CSS Lint warnings, specifically ID's as selectors:
 https://2002-2012.mattwilcox.net/archive/entry/id/1054/
+
+- [12] Image "alttext" guidlines for accessiblity:
+https://webaim.org/techniques/alttext/
 
 ## License Information
 
