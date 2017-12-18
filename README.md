@@ -80,6 +80,11 @@ One of the ideas, I have tested was highlighting each section in separate colour
 
 There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily good practice (lot of divs, positionings and wrapping of sections). I have now realised, that this could have been the perfect opportunity to make use of GitHub branching again, but unfortunately, I did not think of it at the time.
 
+I have run my CSS through csslint.net, Refernce [10]. It has produced just over 30 warnings and no errors.
+Initially it produced some additional warnings, where the warning was genuine, like defininf `text-align: center` twice for instance. Once these have been addressed, I was left with errors to do with ID's within selectors, which is a contrevorsial topic, Reference [11]. Another warning was not to use width and padding together, as it might make elements larger than expected. This is no problem as I have tested element sizes extensively to ensure smooth breakpoints and sensible sizes accross different window sizes. 
+
+Error to do with multiple headings (h1, h2, h3), however these are to do with breakpoints and so are the "Too many font-size declarations." Overall the CSS lint "errors" that are left are, in my opinion, nothing to worry about.
+
 ### Animation testing
 The animations were tested on a variety of devices and browsers.
 Initially, I have implemented them with animation delays. The idea was to allow each animated element to fade in incrementally. The issue was that for this to work without elements appearing, dissappearing and appearing again, I had to set the opacity of the element to 0 and let the animation make it appear with `animation fill mode: forwards;`. 
@@ -87,6 +92,8 @@ Initially, I have implemented them with animation delays. The idea was to allow 
 This seemed to work, however, after testing on older browsers I realised that the animations do not run and therefore the elements stay hidden. I then reworked the animation by increasing animation duration and setting the 0% and 50% to be `opacity: 0`. This has achieved the same effect as the animation delay, without having to set elements to be `opacity: 0` initially.
 
 This made me realise how important it is NOT to rely on animations. Now, even if none of the animations run on my website, everything is viewable, accessible and users will have no negative impact if they are using older browsers.
+
+I have removed `border-radius` from profile picture animation, as it caused performance issues on mobiles.
 
 ### JavaScript testing
 
@@ -121,9 +128,9 @@ Overall, I covered a lot of different scenarios and they have worked just as int
 
 I have passed my website along to family members. They tested on laptop and phones. The feedback received was positive. They really liked the simplicity of the website. There was no problem with navigation or opening any of the additional windows. 
 
-One of the highlighted elements that they really liked was how much the website changed on larger devices and even on phones if it was tiled 90 degrees.
+One of the highlighted elements that they really liked was how much the website changed on larger devices and even on phones if it was tiled 90 degrees. The different colours for menu items was praised and the simpicity of layout and amount of information was liked.
 
-A negative point highlighted, which I have missed was the main title of the page, was misspelt. Instead of Portfolio it was Portolio. Good thing that this was spotted, as somehow, I have missed that completely.
+A negative point highlighted, which I have missed was the main title of the page, was misspelt. Instead of Portfolio it was Portolio. Good thing that this was spotted, as somehow, I have missed that completely. Another negative point was that the `border-radius` animation seemed to be slow. I then deducted that this type of anmation is perhaps a bit too much to include and fading in the elements would be enough.
 
 ## References
 
@@ -149,9 +156,14 @@ https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
 - [8] Google Maps API:
 https://developers.google.com/maps/documentation/javascript/tutorial
 
--[9] The P.A.R.C Principles of Visual Design:
+- [9] The P.A.R.C Principles of Visual Design:
 http://www.cs.sfu.ca/~tamaras/design/P_A_R_C_Principles_Visual.html
 
+- [10] CSS Lint:
+http://csslint.net/
+
+- [11] Discussion on CSS Lint warnings, specifically ID's as selectors:
+https://2002-2012.mattwilcox.net/archive/entry/id/1054/
 
 ## License Information
 

@@ -72,13 +72,13 @@ h6 {
 
 hr {
 	animation-name: lineFade;
-	animation-duration: 4s; /* Lenght */
+	animation-duration: 3s; /* Lenght */
 	animation-iteration-count: 1; /* One iteration */
 	animation-timing-function: ease-in-out;
 }
 
-@keyframes lineFade { /* Fade from full opacity to no opacity. */
-	0% { opacity: 0.3}
+@keyframes lineFade { /* Fade from very low opacity to no opacity, then to 1 */
+	0% { opacity: 0.1}
 	50% { opacity: 0}
 	100% { opacity: 1}
 }
@@ -98,18 +98,14 @@ svg {
 	width: 32px;
 }
 
+/* Mobile menu */
 #menu {
 	text-decoration: none;
 	padding: 1.25em 1.25em 0 1.25em;
 	margin: 1em;
 	text-align: right;
   background: #c9ffe6;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-#menu:hover {
-	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .show-menu {
@@ -208,17 +204,17 @@ section {
 	width: 100px;
 	height: 113px;
 	margin-top: 3em;
+	border-radius: 50%;
 	animation-name: circleImage;
 	animation-duration: 4s; /* The lenght */
 	animation-iteration-count: 1; /* Play once */
-	animation-fill-mode: forwards; /* Keey border radius style */
 }
 
 
 
 @keyframes circleImage {
-	0%	{ border-radius: 0; opacity: 0 } /* Opacity and border radius combined. */
-	100% { border-radius: 50%; opacity: 1}
+	0%	{ opacity: 0 } /* Opacity */
+	100% { opacity: 1}
 }
 
 
