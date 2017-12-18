@@ -10,7 +10,7 @@ Mark Winkler Portfolio.
 body {
 	margin: 0;
 	font-family: 'Forum', cursive;
-	background-color: #fffffd;
+	background-color: #fafafa;
 }
 
 header {
@@ -36,16 +36,14 @@ as required.
 h1 {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	opacity: 0; /* Initial opacity */
 	animation-name: headerFade;
 	animation-duration: 4s; /* Lenght */
 	animation-iteration-count: 1; /* Play once */
-	animation-fill-mode: forwards; /* Keep Animation property on picutre */
-	animation-delay: 1s; /* One second delay */
 }
 
 @keyframes headerFade { /* Fade from full opacity to no opacity. */
 	0%	{ opacity: 0 }
+	50% { opacity: 0} /* Appear later */
 	100% { opacity: 1}
 }
 
@@ -71,16 +69,15 @@ h6 {
 }
 
 hr {
-	opacity: 0; /* Opacity before animation */
 	animation-name: lineFade;
-	animation-duration: 2s; /* Lenght */
+	animation-duration: 4s; /* Lenght */
 	animation-iteration-count: 1; /* One iteration */
-	animation-fill-mode: forwards;
-	animation-delay: 1.5s; /* Delay to make hr appear later */
+	animation-timing-function: ease-in-out;
 }
 
 @keyframes lineFade { /* Fade from full opacity to no opacity. */
-	0%	{ opacity: 0 }
+	0% { opacity: 0.3}
+	50% { opacity: 0}
 	100% { opacity: 1}
 }
 
@@ -190,16 +187,14 @@ introductory text effects.
 section {
 	font-size: 1.3em;
 	padding: 0 0.4em;
-	opacity: 0;  /* Initial opacity */
 	animation-name: sectionFade;
-	animation-duration: 2s;	/* Lenght */
+	animation-duration: 3s;	/* Lenght */
 	animation-iteration-count: 1; /* Play once */
-	animation-fill-mode: forwards; /* Keep Animation property on picutre */
-	animation-delay: 1s; /* Delay to make profile picture visible first. */
 }
 
 @keyframes sectionFade { /* From 0 (invisible) to 1 (no opacity) */
 	0%	{ opacity: 0 }
+	50% { opacity: 0}
 	100% { opacity: 1}
 }
 
@@ -211,12 +206,10 @@ section {
 	width: 100px;
 	height: 113px;
 	margin-top: 3em;
-	opacity: 0;  /* Initial opacity */
 	animation-name: circleImage;
 	animation-duration: 4s; /* The lenght */
 	animation-iteration-count: 1; /* Play once */
-	animation-fill-mode: forwards; /* Keep Animation property on picutre */
-	animation-delay: .5s; /* Slight delay to let image load in first. */
+	animation-fill-mode: forwards; /* Keey border radius style */
 }
 
 
@@ -249,7 +242,7 @@ section {
 
 #map {
 	height: 25em;
-	width: 80%; /* Mobile width */
+	width: 92%; /* Mobile width */
 	margin: 0 auto; /* Centered */
 }
 
@@ -274,7 +267,7 @@ table {
 	width: 100%;
 	padding: 0 .5em .5em .5em;
 	margin-bottom: 2em;
-	background-color: #f7f7f7;
+	background-color: #fcfcfc;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -434,6 +427,18 @@ Reference [4]
 }
 
 
+/******************************
+				
+						Footer
+
+Simple footer.
+
+******************************/
+
+
+footer {
+
+}
 
 /******************************
 					
@@ -672,6 +677,10 @@ Reference [1]
 	
 	hr {
 		max-width: 812px;
+	}
+	
+	#map {
+		height: 20em; /* Larger screen which means wider map */
 	}
 	
 }

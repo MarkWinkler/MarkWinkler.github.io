@@ -68,7 +68,12 @@ One of the ideas, I have tested was highlighting each section in separate colour
 
 There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily good practice. I have now realised, that this could have been the perfect opportunity to make use of GitHub branching again, but unfortunately, I did not think of it at the time.
 
+The animations were tested on a variety of devices and browsers.
+Initially, I have implemented them with animation delays. The idea was to allow each animated element to fade in incrementally. The issue was that for this to work without elements appearing, dissappearing and appearing again, I had to set the opacity of the element to 0 and let the animation make it appear with `animation fill mode: forwards;`. 
 
+This seemed to work, however, after testing on older browsers I realised that the animations do not run and therefore the elements stay hidden. I then reworked the animation by increasing animation duration and setting the 0% and 50% to be `opacity: 0`. This has achieved the same effect as the animation delay, without having to set elements to be `opacity: 0` initially.
+
+This made me realise how important it is NOT to rely on animations. Now, even if none of the animations run on my website, everything is viewable, accessible and users will have no negative impact if they are using older browsers.
 
 ### JavaScript testing
 
