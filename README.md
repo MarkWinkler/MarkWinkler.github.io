@@ -6,9 +6,9 @@
 
 This website is an **online portfolio** about me; Mark Winkler.
 It contains information on my past and current experiences,
-as well as my motivation for the future. All built with
+as well as my motivation for the future. All built with mobile in mind, with
 pure `HTML5`, `CSS3` and `JavaScript ES6`.
-Please enjoy!
+Enjoy!
 
 
 ## Development
@@ -26,24 +26,36 @@ For Desktop:
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg" align="center" width="572"></a>
 
 
-This idea was then taken on, and development begun. I started development by ensuring HTML5 semantics are used throughout. My aim was to minimise additional divs and aim to stick to semantics as much as possible.
+This idea was then taken on, and development begun. I started development by ensuring HTML5 semantics are used throughout. My aim was to minimise additional divs and aim to stick to semantics as much as possible. This improves maintainability and results in a clearer code.
 
 Responsiveness was the key. Throughout the development, whenever a new style was created, it was tested across large variety of resolutions from 2k down to mobile sizes. This ensured that breakpoints are applied to any new styles as required.
 
 Validation was run against the HTML multiple times, with only two times highlighting a warnings, which were missing header tag from a section and table row and coloumn count not matching.
 
-The rest of the process was an incremental development. Make a few changes, then use live preview or refresh the page to ensure it worked as intended.
+The rest of the process was an incremental development. Make a few changes, then use live preview or refresh the page to ensure it worked as intended, then commit changes to Git.
 
 ### Branching 
 
-What I used branching for was the attempt to add the escape key to close the popup windows. I decided to use branching, as this development required a lot of changes to the JavaScript and I was not sure if I can make it work. Luckily, I managed to, after working through a few possible solutions and have merged it with my `master` branch. 
+What I used branching for was the attempt to add the escape key to close the popup windows developed for the employee section. I decided to use branching, as this development required a lot of changes to the JavaScript and I was not sure if I can make it work. Luckily, I managed to, after working through a few possible solutions and have merged it with my `master` branch. 
 
-I have kept in the old branch for clarity.
+I have kept in the old branch in for clarity.
 
 
 ### Javascript Development
 
 Javascript was rather difficult, as I do not have much experience in using it. Luckily, using the lab example (which I have implemented for the menu), I was able to use the same principle to create popup windows. This included the highly encouraged eventlisteners, adding classes to the classlist to display the window and the variety of ways in which the window can be closed (including accessibility for keyboard controls).
+
+## Principles of Design (PARC)
+Reference [9]
+
+Proximity - I have made my website layout clear, with separate sections for each menu item. There is sufficient padding between sections and all titled with semantic elements, to ensure these are a clear break-down. I have tested the website without CSS too, and the flow of information would make it simple for a screen reader to process the information too.
+
+Alignment - This is demonstrated by the  profile picture at the top which is closely aligned to the header, suggesting Mark Winkler - Portfolio is related to the image. Further down the site Location and the short description is aligned to Google Maps and the same can be found for the Contact and employement sections.
+
+Repetition - The first example of this is the navigation menu on the left which is consistently visible on larger devices. On top of this, other than the introduction section, headers, fonts, logo sizes are all kept the same to ensure the same experience throughout the portfolio.
+
+Contrast - The biggest contrast is between the navigation menu and main section of the website. This is to ensure, the navigation can be found quickly and it stands out. There is also a slight contrast in the introduction section which aims to capture the attention of visitors.
+
 
 ## Tests
 
@@ -66,8 +78,9 @@ Turned out that this was not the solution and people on forums should not be tru
 
 One of the ideas, I have tested was highlighting each section in separate colours. This could have looked nice, but I have had issues with trying to get section background to go full width because of restrictions (navbar, set page width etc).
 
-There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily good practice. I have now realised, that this could have been the perfect opportunity to make use of GitHub branching again, but unfortunately, I did not think of it at the time.
+There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily good practice (lot of divs, positionings and wrapping of sections). I have now realised, that this could have been the perfect opportunity to make use of GitHub branching again, but unfortunately, I did not think of it at the time.
 
+### Animation testing
 The animations were tested on a variety of devices and browsers.
 Initially, I have implemented them with animation delays. The idea was to allow each animated element to fade in incrementally. The issue was that for this to work without elements appearing, dissappearing and appearing again, I had to set the opacity of the element to 0 and let the animation make it appear with `animation fill mode: forwards;`. 
 
@@ -79,10 +92,12 @@ This made me realise how important it is NOT to rely on animations. Now, even if
 
 For the testing of Javascript, I used the online example of W3C, which presented inline scripts, onClicks and separate snippets. 
 I implemented this with eventlisteners and linked it to relevant sections.
-I knew I needed to have a separate id for `popup` and `openPopup`, as each popup window would be different.
-`span` was a `getElementsByClassName` and I thought I can include this once and make use of it for all 3 popup windows. This did not work and unfortunately, I had to use `close1`, `close2` and `close3` (along with the duplication of CSS style). This was not ideal, and I am sure there are better solutions, however, I was glad that I made it work nonetheless.
 
-The other testing was to do with the branching section. Where users could press "escape" on their keyboards to close the popup window. There were various solutions tested and eventually I came up with the solution by following spans javascript code.
+I knew I needed to have a separate id for `popup` and `openPopup`, as each popup window would be different.
+`span` was a `getElementsByClassName` and I thought, I can include this once and make use of it for all 3 popup windows. This did not work and unfortunately, I had to use `close1`, `close2` and `close3` (along with the duplication of CSS style). This was not ideal, and I am sure there are better solutions, however, I was glad that I made it work nonetheless.
+
+
+The other testing was to do with the branching section. Where users could press "escape" on their keyboards to close the popup window. There were various solutions tested and eventually I came up with the solution by following the already created spans javascript code.
 
 I had to ensure that these windows were sufficiently tested, so I ensured all combinations are exhausted. Some of this included:
 
@@ -112,7 +127,7 @@ A negative point highlighted, which I have missed was the main title of the page
 
 ## References
 
-Most are highlighted in relevant comments.
+Most are highlighted in relevant sections.
 
 - [1] Source used to select the breakpoints for development: https://medium.com/@uiuxlab/the-most-used-responsive-breakpoints-in-2017-of-mine-9588e9bd3a8a
 
@@ -133,6 +148,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
 
 - [8] Google Maps API:
 https://developers.google.com/maps/documentation/javascript/tutorial
+
+-[9] The P.A.R.C Principles of Visual Design:
+http://www.cs.sfu.ca/~tamaras/design/P_A_R_C_Principles_Visual.html
 
 
 ## License Information
