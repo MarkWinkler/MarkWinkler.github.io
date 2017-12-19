@@ -24,7 +24,7 @@ Mobile nav open:
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Nav-Open.jpg" align="center" width="572"></a>
 
 
-Desktop general direaction:
+Desktop general direction:
 
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg" align="center" width="572"></a>
 
@@ -68,12 +68,12 @@ And this is what it looked like in different editor or on GitHub pages:
 
 The difference, was that it displayed with a lot more space, destroying my code indentations. So, I decided to use branching in order to try to solve this issue. Branching was appropriate, due to having to change every single file, besides this readme. If it did not work out, then I could always go back to the master branch and delete this one, without affecting the code in any way possible.
 
-The solution, luckily, did not need to be a manual one. I found a tabtospace extension on GitHub, which I have installed and used on my code. Once this has been tested and confirmed that no functionality was affected the branch was merged.
+The solution, Reference [13], luckily, did not need to be a manual one. I found a tabtospace extension on GitHub, which I have installed and used on my code. Once this has been tested and confirmed that no functionality was affected the branch was merged.
 Overall, this change would not have needed to happen if Brackets worked properly.
 
 I have also kept this branch in for clarity.
 
-Usually I would delete both of these branches, however the marking sceme clearly stated branching as a feature development and I decided to keep these in, just to make it clear during marking. :)
+Usually I would delete both branches, however the marking scheme clearly stated branching as a feature development and I decided to keep these in, just to make it clear during marking. :)
 
 ### Javascript Development
 
@@ -115,7 +115,7 @@ One of the ideas, I have tested was highlighting each section in separate colour
 There was a workaround, that I came up with, which required a lot of excess html tags and was not necessarily good practice (lot of div, positioning and wrapping of sections). I have now realised, that this could have been the perfect opportunity to make use of GitHub branching again, but unfortunately, I did not think of it at the time.
 
 I have run my CSS through csslint.net, Reference [10]. It has produced just over 30 warnings and no errors.
-Initially, it produced some additional warnings, where the warning was genuine, like definining `text-align: center` twice for instance. Once these have been addressed, I was left with errors to do with ID's within selectors, which is a controversial topic, Reference [11]. Another warning was not to use width and padding together, as it might make elements larger than expected. This is no problem as I have tested element sizes extensively to ensure smooth breakpoints and sensible sizes across different window sizes. 
+Initially, it produced some additional warnings, where the warning was genuine, like defining `text-align: center` twice for instance. Once these have been addressed, I was left with errors to do with ID's within selectors, which is a controversial topic, Reference [11]. Another warning was not to use width and padding together, as it might make elements larger than expected. This is no problem as I have tested element sizes extensively to ensure smooth breakpoints and sensible sizes across different window sizes. 
 
 Error to do with multiple headings (h1, h2, h3), however these are to do with breakpoints and so are the "Too many font-size declarations." Overall the CSS lint "errors" that are left are, in my opinion, nothing to worry about.
 
@@ -202,6 +202,9 @@ https://2002-2012.mattwilcox.net/archive/entry/id/1054/
 
 - [12] Image "alttext" guidlines for accessiblity:
 https://webaim.org/techniques/alttext/
+
+- [13] Tabtospace extension to sort Brackets text editor indentation issues:
+https://github.com/davidderaedt/tabtospace-extension
 
 ## License Information
 
