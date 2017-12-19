@@ -48,9 +48,30 @@ The rest of the process was an incremental development. Make a few changes, then
 
 ### Branching 
 
+#### JavaScript escape key
+
 What I used branching for was the attempt to add the escape key to close the popup windows developed for the employee section. I decided to use branching, as this development required a lot of changes to the JavaScript and I was not sure if I can make it work. Luckily, I managed to, after working through a few possible solutions and have merged it with my `master` branch. 
 
 I have kept in the old branch in for clarity.
+
+#### Brackets - text editor indentation problems.
+
+Looking at my source code through GitHub pages revealed that whilst my source code looked fine in the Brackets text editor, it came out wrong on GitHub pages. After pasting it into several text editors, I realised that this was not GitHub pages issue, but in fact Brackets. 
+
+This is an example snippet of my HTML and how it looked in Brackets:
+
+`			<!-- Navigation -->
+			<nav id="nav-menu">
+				<ul class="nav" id="nav-colours">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#location">Location</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#employement">Employement</a></li>
+				</ul>
+			</nav>
+`
+
 
 
 ### Javascript Development
