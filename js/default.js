@@ -139,3 +139,19 @@
 	})
 	
 })();
+
+		<!-- Google Maps API section, Reference [8]-->
+			function initMap() {
+				var myLocation = {lat: 52.6369, lng: -1.1398};
+
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 8,
+					center: myLocation
+				});
+
+				var marker = new google.maps.Marker({
+					position: myLocation,
+					map: map,
+					title: 'Leicester'
+				});
+			}

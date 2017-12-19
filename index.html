@@ -314,25 +314,6 @@ P14172006
 		<!-- End of main -->
 
 		
-		<!-- Google Maps API section, requires inline script. Reference [8]-->
-		<script>
-			function initMap() {
-				var myLocation = {lat: 52.6369, lng: -1.1398};
-
-				var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 8,
-					center: myLocation
-				});
-
-				var marker = new google.maps.Marker({
-					position: myLocation,
-					map: map,
-					title: 'Leicester'
-				});
-			}
-    </script>
-		<!-- End of Google Maps script -->
-		
 		<!-- Google Maps personal API key -->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH88wretRm1nREBOFTDwAYv6ze-42-qKY&callback=initMap"
     async defer></script>
