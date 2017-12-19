@@ -68,6 +68,12 @@ And this is what it looked like in different editor or on GitHub pages:
 
 The difference, was that it displayed with a lot more space, destroying my code indentations. So, I decided to use branching in order to try to solve this issue. Branching was appropriate, due to having to change every single file, besides this readme. If it did not work out, then I could always go back to the master branch and delete this one, without affecting the code in any way possible.
 
+The solution, luckily, did not need to be a manual one. I found a tabtospace extension on GitHub, which I have installed and used on my code. Once this has been tested and confirmed that no functionality was affected the branch was merged.
+Overall, this change would not have needed to happen if Brackets worked properly.
+
+I have also kept this branch in for clarity.
+
+Usually I would delete both of these branches, however the marking sceme clearly stated branching as a feature development and I decided to keep these in, just to make it clear during marking. :)
 
 ### Javascript Development
 
