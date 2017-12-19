@@ -15,15 +15,27 @@ Enjoy!
 
 Original idea with simple wireframes.
 
-For Mobile:
+Mobile general direction:
 
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Wireframe.jpg" align="center" width="572"></a>
 
+Mobile nav open:
+
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Mobile-Nav-Open.jpg" align="center" width="572"></a>
 
 
-For Desktop:
+Desktop general direaction:
 
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-wireframe.jpg" align="center" width="572"></a>
+
+Larger display differences, Full HD and up:
+
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Desktop-HD-Wireframe.jpg" align="center" width="572"></a>
+
+Popup window with Javascript or CSS, which will display some sort of additional information:
+
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/Popup-Wireframe.jpg" align="center" width="572"></a>
+
 
 
 This idea was then taken on, and development begun. I started development by ensuring HTML5 semantics are used throughout. My aim was to minimise additional divs and aim to stick to semantics as much as possible. This improves maintainability and results in a clearer code.

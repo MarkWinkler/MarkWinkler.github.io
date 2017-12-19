@@ -1,3 +1,5 @@
+"use strict"; // JavaScript to be excecuted in strict mode.
+
 (function(){
 
   let menuButton = document.getElementById("menu");
