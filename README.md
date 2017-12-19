@@ -66,6 +66,7 @@ And this is what it looked like in different editor or on GitHub pages:
 
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/indentation-fix/images/indentation-in-other.jpg" align="center"></a>
 
+The difference, was that it displayed with a lot more space, destroying my code indentations. So, I decided to use branching in order to try to solve this issue. Branching was appropriate, due to having to change every single file, besides this readme. If it did not work out, then I could always go back to the master branch and delete this one, without affecting the code in any way possible.
 
 
 ### Javascript Development

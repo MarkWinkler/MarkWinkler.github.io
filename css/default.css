@@ -1,6 +1,6 @@
 /******************************
-				
-				Global Styles
+        
+        Global Styles
 
 Overall styles for 
 Mark Winkler Portfolio.
@@ -8,23 +8,23 @@ Mark Winkler Portfolio.
 ******************************/
 
 body {
-	margin: 0;
-	font-family: 'Forum', cursive;
-	background-color: #fafafa;
+  margin: 0;
+  font-family: 'Forum', cursive;
+  background-color: #fafafa;
 }
 
 header {
-	text-align: center;
-	padding-top: 2em;
+  text-align: center;
+  padding-top: 2em;
 }
 
 main {
-	padding: .2em;
+  padding: .2em;
 }
 
 /******************************
-				
-				Headings
+        
+        Headings
 
 Changing default heading
 fonts, sizes and positions
@@ -34,59 +34,59 @@ as required.
 
 
 h1 {
-	font-size: 1.6em;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	animation-name: headerFade;
-	animation-duration: 2s; /* Lenght */
-	animation-iteration-count: 1; /* Play once */
+  font-size: 1.6em;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  animation-name: headerFade;
+  animation-duration: 2s; /* Lenght */
+  animation-iteration-count: 1; /* Play once */
 }
 
 @keyframes headerFade { /* Fade from full opacity to no opacity. */
-	0%	{ opacity: 0 }
-	50% { opacity: 0} /* Appear later */
-	100% { opacity: 1}
+  0%	{ opacity: 0 }
+  50% { opacity: 0} /* Appear later */
+  100% { opacity: 1}
 }
 
 h2 {
-	font-size: 1.3em;
-	font-family: 'Indie Flower', cursive;
-	margin-top: 1.5em;
-	padding-top: .2em;
+  font-size: 1.3em;
+  font-family: 'Indie Flower', cursive;
+  margin-top: 1.5em;
+  padding-top: .2em;
 }
 
 h3 {
-	font-size: 1em;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	margin-top: 2em;
+  font-size: 1em;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 2em;
 }
 
 h4, h5 {
-	text-align: center;
+  text-align: center;
 }
 
 h6 {
-	text-align: center;
+  text-align: center;
 }
 
 hr {
-	animation-name: lineFade;
-	animation-duration: 2s; /* Lenght */
-	animation-iteration-count: 1; /* One iteration */
-	animation-timing-function: ease-in-out;
+  animation-name: lineFade;
+  animation-duration: 2s; /* Lenght */
+  animation-iteration-count: 1; /* One iteration */
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes lineFade { /* Fade from very low opacity to no opacity, then to 1 */
-	0% { opacity: 0.1}
-	50% { opacity: 0}
-	100% { opacity: 1}
+  0% { opacity: 0.1}
+  50% { opacity: 0}
+  100% { opacity: 1}
 }
 
 
 /******************************
-				
-				Navigation
+        
+        Navigation
 
 Defining the overall
 navigation for the page.
@@ -94,18 +94,18 @@ navigation for the page.
 ******************************/
 
 svg {
-	height: 32px; 
-	width: 32px;
+  height: 32px; 
+  width: 32px;
 }
 
 /* Mobile menu */
 #menu {
-	text-decoration: none;
-	padding: 1.25em 1.25em 0 1.25em;
-	margin: 1em;
-	text-align: right;
+  text-decoration: none;
+  padding: 1.25em 1.25em 0 1.25em;
+  margin: 1em;
+  text-align: right;
   background: #c9ffe6;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .show-menu {
@@ -113,67 +113,67 @@ svg {
 }
 
 #nav-menu {
-	background-color: #000002;
+  background-color: #000002;
 }
 
 nav {
-	display: none;
-	height: 100%;
-	width: 100%;
+  display: none;
+  height: 100%;
+  width: 100%;
 }
 
 nav a {
-	display: block;
-	text-decoration: none;
-	text-align: center;
-	font-size: 1.2em;
-	color: #fcfcfc;
-	font-family: 'Open Sans', sans-serif;
-	padding: 0 .5em;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  color: #fcfcfc;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 .5em;
   line-height: 1.8em;
   border-bottom: 1px solid #777c7c;
-	transition: .5s;
+  transition: .5s;
 }
 
 /* The ul id used to achieve different hover colours accross navigation. */
 
 #nav-colours li:nth-child(1) a:hover {
-	background-color: #00910c;
+  background-color: #00910c;
 }
 
 #nav-colours li:nth-child(2) a:hover {
-	background-color: #0097a8;
+  background-color: #0097a8;
 }
 
 #nav-colours li:nth-child(3) a:hover {
-	background-color: #480091;
+  background-color: #480091;
 }
 
 #nav-colours li:nth-child(4) a:hover {
-	background-color: #915700;
+  background-color: #915700;
 }
 
 #nav-colours li:nth-child(5) a:hover {
-	background-color: #00a584;
+  background-color: #00a584;
 }
 
 
 nav li:last-child a {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 /* The ul class within nav. */
 .nav {
-	list-style: none;
-	padding: 5px 0;
-	margin: 0 0;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0 0;
 }
 
 
 
 /******************************
-				
-	Introduction/Home Section
+        
+  Introduction/Home Section
 
 Overal section definition,
 profile picutre and the
@@ -183,72 +183,72 @@ introductory text effects.
 
 
 section {
-	font-size: 1.3em;
-	padding: 0 0.4em;
-	animation-name: sectionFade;
-	animation-duration: 3s;	/* Lenght */
-	animation-iteration-count: 1; /* Play once */
+  font-size: 1.3em;
+  padding: 0 0.4em;
+  animation-name: sectionFade;
+  animation-duration: 3s;	/* Lenght */
+  animation-iteration-count: 1; /* Play once */
 }
 
 @keyframes sectionFade { /* From 0 (invisible) to 1 (no opacity) */
-	0%	{ opacity: 0 }
-	50% { opacity: 0}
-	100% { opacity: 1}
+  0%	{ opacity: 0 }
+  50% { opacity: 0}
+  100% { opacity: 1}
 }
 
 .center-image {
-	text-align: center;
+  text-align: center;
 }
 
 .profile-picture {
-	width: 100px;
-	height: 113px;
-	margin-top: 3em;
-	border-radius: 50%;
-	animation-name: circleImage;
-	animation-duration: 2.5s; /* The lenght */
-	animation-iteration-count: 1; /* Play once */
+  width: 100px;
+  height: 113px;
+  margin-top: 3em;
+  border-radius: 50%;
+  animation-name: circleImage;
+  animation-duration: 2.5s; /* The lenght */
+  animation-iteration-count: 1; /* Play once */
 }
 
 
 
 @keyframes circleImage {
-	0%	{ opacity: 0 } /* Opacity */
-	100% { opacity: 1}
+  0%	{ opacity: 0 } /* Opacity */
+  100% { opacity: 1}
 }
 
 
 
 
 .introduction {
-	font-size: 1.4em;
-	font-family: 'Indie Flower', cursive;
-	padding: 0 .5em .5em .5em;
-	background-color: #ffffed;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 1.4em;
+  font-family: 'Indie Flower', cursive;
+  padding: 0 .5em .5em .5em;
+  background-color: #ffffed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
 
 /******************************
-				
-			Location Section
+        
+      Location Section
 
-		Using the Google API.
+    Using the Google API.
 
 ******************************/
 
 #map {
-	height: 25em;
-	width: 92%; /* Mobile width */
-	margin: 0 auto; /* Centered */
+  height: 25em;
+  width: 92%; /* Mobile width */
+  margin: 0 auto; /* Centered */
 }
 
 
 
 /******************************
-				
-				Contact Section
+        
+        Contact Section
 
 Table and "button" used
 to create the Linkedin
@@ -258,41 +258,41 @@ contact section.
 
 
 .linkedin-picture {
-	width: 80%;
+  width: 80%;
 }
 
 table {
-	width: 100%;
-	padding: 0 .5em .5em .5em;
-	margin-bottom: 2em;
-	background-color: #fcfcfc;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 0 .5em .5em .5em;
+  margin-bottom: 2em;
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 td, th {
-	font-size: 1em;
-	text-align: center;
-	padding: .2em;
+  font-size: 1em;
+  text-align: center;
+  padding: .2em;
 }
 
 .btn {
-	font-size: 1em;
-	text-decoration: none;
-	background-color: #0077B5;
-	color: #fcfcfc;
-	padding: .6em .2em .6em .2em; 
-	border-radius: 5%;
+  font-size: 1em;
+  text-decoration: none;
+  background-color: #0077B5;
+  color: #fcfcfc;
+  padding: .6em .2em .6em .2em; 
+  border-radius: 5%;
 }
 
 .btn:hover {
-	background-color: #003e5e;
+  background-color: #003e5e;
 }
 
 
 
 /******************************
-				
-			Employement Section
+        
+      Employement Section
 
 Defining the display of the
 three logos.
@@ -307,26 +307,26 @@ party helped code.)
 
 
 #logo-section {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logos {
-	width: 85%;
-	padding-bottom: 1em;
+  width: 85%;
+  padding-bottom: 1em;
 }
 
 .employer-picture {
-	width: 260px;
-	height: 146px;
+  width: 260px;
+  height: 146px;
 }
 
 
 
 /******************************
-				
-				Popup Section
+        
+        Popup Section
 
 Most reworked to fit
 specific site neeeds.
@@ -335,407 +335,407 @@ Reference [4]
 ******************************/
 
 .popup {
-	font-size: 1.1em;
-	font-family: 'Forum', cursive;
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-size: 1.1em;
+  font-family: 'Forum', cursive;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 
 /* separate popup-content for the three companies */
 
 .popup-content-lasa {
-	background-color: #e8fff4;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
+  background-color: #e8fff4;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 .popup-content-gm {
-	background-color: #e2edff;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
+  background-color: #e2edff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 .popup-content-code {
-	background-color: #eaffe0;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
+  background-color: #eaffe0;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 .show-popup {
-	display: block;
+  display: block;
 }
 
 
 /* Separate close required to make javascript work correctly */
 
 .close {
-	color: #aaaaaa;
-	float: right;
-	font-size: 1em;
-	font-weight: bold;
+  color: #aaaaaa;
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .close2 {
-	color: #aaaaaa;
-	float: right;
-	font-size: 1em;
-	font-weight: bold;
+  color: #aaaaaa;
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .close2:hover,
 .close2:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .close3 {
-	color: #aaaaaa;
-	float: right;
-	font-size: 1em;
-	font-weight: bold;
+  color: #aaaaaa;
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .close3:hover,
 .close3:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /******************************
-					
-					Breakpoint
+          
+          Breakpoint
 
-	Larger than Mobile devices
-						500px
+  Larger than Mobile devices
+            500px
 
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 500px) {
-	
-	header {
-		padding: 0;
-	}
-	
-	main {
-		float: right;
-		width: 68%;
-		margin-top: 4em;
-	}
-	
-	section {
-	padding-top: 4em;
-	}
-	
-	#nav-menu {
-	background-color: #00002d;
-	}
-	
-	nav {
-		display: block;
-		overflow-x: hidden;
-		position: fixed;
-		height: 100%;
-		width: 30%;
-	}
-	
-	nav a {
-		display: flex;
-		font-size: 1.2em;
-		flex-flow: row wrap;
-		justify-content: space-around;
-		padding: .5em 0;
-	}
-	
-		
-	.profile-picture {
-		width: 110px;
-		height: 124px;
-	}
-	
-	h1 {
-		font-size: 1.7em;
-	}
-	
-	h2 {
-		font-size: 1.5em;
-	}
-	
-	h3 {
-		font-size: 1.15em;
-	}
-	
-	section {
-		width: 90%;
-		margin: 0 auto;
-	}
-	
-	hr {
-		width: 95%;
-	}
-	
-	.introduction-title {
-		margin-top: 4em;
-	}
-	
-	 #menu {
+  
+  header {
+    padding: 0;
+  }
+  
+  main {
+    float: right;
+    width: 68%;
+    margin-top: 4em;
+  }
+  
+  section {
+  padding-top: 4em;
+  }
+  
+  #nav-menu {
+  background-color: #00002d;
+  }
+  
+  nav {
+    display: block;
+    overflow-x: hidden;
+    position: fixed;
+    height: 100%;
+    width: 30%;
+  }
+  
+  nav a {
+    display: flex;
+    font-size: 1.2em;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: .5em 0;
+  }
+  
+    
+  .profile-picture {
+    width: 110px;
+    height: 124px;
+  }
+  
+  h1 {
+    font-size: 1.7em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1.15em;
+  }
+  
+  section {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  hr {
+    width: 95%;
+  }
+  
+  .introduction-title {
+    margin-top: 4em;
+  }
+  
+   #menu {
     display: none;
   }
-	
-	#map {
-		width: 100%;
-	}
-	
-	td, th {
-		font-size: 1.1em;
-	}
-	
-	.btn {
-		font-size: 1.05em;
-	}
-	
-	.linkedin-picture {
-		width: auto;
-		height: auto;
-	}
-	
-	#logo-section {
-		justify-content: space-around;
-		align-items: flex-start;
-		flex-direction: row;
-	}
-	
-	.logos {
-		width: 90%;
-	}
-	
-	.employer-picture {
-		width: 599px;
-		height: 337px;
-	}
-	
+  
+  #map {
+    width: 100%;
+  }
+  
+  td, th {
+    font-size: 1.1em;
+  }
+  
+  .btn {
+    font-size: 1.05em;
+  }
+  
+  .linkedin-picture {
+    width: auto;
+    height: auto;
+  }
+  
+  #logo-section {
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  .logos {
+    width: 90%;
+  }
+  
+  .employer-picture {
+    width: 599px;
+    height: 337px;
+  }
+  
 }
 
 
 
 /******************************
-					
-					Breakpoint
+          
+          Breakpoint
 
-					Tablet Size
-						768px
-	
+          Tablet Size
+            768px
+  
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 768px) {
-	
-	main {
-		width: 78%;
-	}
-	
-	nav {
-		width: 20%;
-	}
-	
-	nav a {
-	font-size: 1.4em;
-	}
-	
-	.profile-picture {
-		width: 120px;
-		height: 135px;
-	}
-	
-	h1 {
-		font-size: 1.9em;
-	}
-	
-	h2 {
-		font-size: 1.6em;
-	}
-	
-	h3 {
-		font-size: 1.3em;
-	}
-	
-	section {
-		width: 60%;
-	}
-	
-	hr {
-		width: 65%;
-	}
-	
-	td, th {
-		font-size: 1.2em;
-	}
-	
-	.btn {
-		font-size: 1.1em;
-	}
-	
-	.logos {
-		width: 100%;
-	}
-	
+  
+  main {
+    width: 78%;
+  }
+  
+  nav {
+    width: 20%;
+  }
+  
+  nav a {
+  font-size: 1.4em;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 135px;
+  }
+  
+  h1 {
+    font-size: 1.9em;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+  }
+  
+  h3 {
+    font-size: 1.3em;
+  }
+  
+  section {
+    width: 60%;
+  }
+  
+  hr {
+    width: 65%;
+  }
+  
+  td, th {
+    font-size: 1.2em;
+  }
+  
+  .btn {
+    font-size: 1.1em;
+  }
+  
+  .logos {
+    width: 100%;
+  }
+  
 }
 
 
 
 /******************************
-					
-					Breakpoint
+          
+          Breakpoint
 
-					Laptop Size
-						1024px
-	
+          Laptop Size
+            1024px
+  
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 1024px) {
-	
-	main {
-		width: 78%;
-	}
-	
-	nav {
-		width: 20%;
-	}
-	
-	nav a {
-	font-size: 1.4em;
-	}
-	
-	.profile-picture {
-		width: 140px;
-		height: 158px;
-	}
+  
+  main {
+    width: 78%;
+  }
+  
+  nav {
+    width: 20%;
+  }
+  
+  nav a {
+  font-size: 1.4em;
+  }
+  
+  .profile-picture {
+    width: 140px;
+    height: 158px;
+  }
 
-	h1 {
-		font-size: 2em;
-	}
-	
-	h2 {
-		font-size: 1.7em;
-	}
-	
-	section {
-		width: 60%;
-	}
-	
-	hr {
-		width: 65%;
-	}
-	
-	
-	td, th {
-		font-size: 1.3em;
-	}
-	
-	.btn {
-		padding: .8em .4em .8em .4em; 
-	}
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.7em;
+  }
+  
+  section {
+    width: 60%;
+  }
+  
+  hr {
+    width: 65%;
+  }
+  
+  
+  td, th {
+    font-size: 1.3em;
+  }
+  
+  .btn {
+    padding: .8em .4em .8em .4em; 
+  }
 }
 
 
 
 /******************************
-					
-					Breakpoint
+          
+          Breakpoint
 
-		Small monitor/laptop Size
-						1366px
-	
+    Small monitor/laptop Size
+            1366px
+  
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 1366px) {
-	
-	main {
-		width: 82%;
-	}
-	
-	nav {
-		width: 16%;
-	}
-	
-	nav a {
-	font-size: 1.5em;
-	}
-	
-	h1 {
-		font-size: 2.1em;
-	}
-	
-	section {
-		width: 58%;
-	}
-	
-	hr {
-		width: 63%;
-	}	
+  
+  main {
+    width: 82%;
+  }
+  
+  nav {
+    width: 16%;
+  }
+  
+  nav a {
+  font-size: 1.5em;
+  }
+  
+  h1 {
+    font-size: 2.1em;
+  }
+  
+  section {
+    width: 58%;
+  }
+  
+  hr {
+    width: 63%;
+  }	
 }
 
 
 
 /******************************
-					
-					Breakpoint
+          
+          Breakpoint
 
-					HD Size
-					1920px
-	
+          HD Size
+          1920px
+  
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 1920px) {
-	
-	main {
-		width: 82%;
-	}
-	
-	nav {
-		width: 12%;
-	}
-	nav a {
-	font-size: 1.7em;
-	}
-	
-	h1 {
-		font-size: 2.2em;
-	}
-	
-	section {
-		max-width: 800px;
-	}
-	
-	hr {
-		max-width: 812px;
-	}
-	
+  
+  main {
+    width: 82%;
+  }
+  
+  nav {
+    width: 12%;
+  }
+  nav a {
+  font-size: 1.7em;
+  }
+  
+  h1 {
+    font-size: 2.2em;
+  }
+  
+  section {
+    max-width: 800px;
+  }
+  
+  hr {
+    max-width: 812px;
+  }
+  
 }
