@@ -1,5 +1,27 @@
 "use strict"; // JavaScript to be excecuted in strict mode.
 
+
+
+<!-- Google Maps API section, Reference [8]-->
+
+	function initMap() {
+		var myLocation = {lat: 52.6369, lng: -1.1398};
+
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 8,
+			center: myLocation
+		});
+
+		var marker = new google.maps.Marker({
+			position: myLocation,
+			map: map,
+			title: 'Leicester'
+		});
+	}
+
+
+
+// Mobile navigation from labs
 (function(){
 
   let menuButton = document.getElementById("menu");
@@ -23,10 +45,11 @@
 	
 })();	
 	
+
 	
+// Employement Popup Section
 
-// LASA Employement Details
-
+// LASA Employement Details - Commented
 
 (function(){
 	let popup = document.getElementById("popup-id1"); // The div class that includes all the popup content.
@@ -63,6 +86,8 @@
 	})																								// in case some users visiting the site will use an old browser.
 	
 	
+	
+	
 		
 	// Close window by clicking outside it.
 	
@@ -78,7 +103,7 @@
 
 
 
-// GM Employement Details
+// GM Employement Details - reapeat from LASA example
 (function(){
 	let popup = document.getElementById("popup-id2"); 				// Linking it to the next id.
 	let openPopup = document.getElementById("employer2"); 		// Linking it to the next employer.
@@ -110,7 +135,10 @@
 	
 })();
 
-// CODE Employement Details
+
+
+// CODE Employement Details - repeat from LASA example
+
 (function(){
 	let popup = document.getElementById("popup-id3"); 				// Linking it to the next id.
 	let openPopup = document.getElementById("employer3"); 		// Linking it to the next employer.
@@ -141,19 +169,3 @@
 	})
 	
 })();
-
-		<!-- Google Maps API section, Reference [8]-->
-			function initMap() {
-				var myLocation = {lat: 52.6369, lng: -1.1398};
-
-				var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 8,
-					center: myLocation
-				});
-
-				var marker = new google.maps.Marker({
-					position: myLocation,
-					map: map,
-					title: 'Leicester'
-				});
-			}
