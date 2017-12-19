@@ -60,17 +60,11 @@ Looking at my source code through GitHub pages revealed that whilst my source co
 
 This is an example snippet of my HTML and how it looked in Brackets:
 
-`			<!-- Navigation -->
-			<nav id="nav-menu">
-				<ul class="nav" id="nav-colours">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#location">Location</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#employement">Employement</a></li>
-				</ul>
-			</nav>
-`
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/indentation-in-brackets.jpg" align="center"></a>
+
+And this is what it looked like in different editor or on GitHub pages:
+
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/indentation-in-other.jpg" align="center"></a>
 
 
 
