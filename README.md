@@ -90,15 +90,15 @@ Repetition - The first example of this is the navigation menu on the left which 
 
 Contrast - The biggest contrast is between the navigation menu and main section of the website. This is to ensure, the navigation can be found quickly and it stands out. There is also a slight contrast in the introduction section which aims to capture the attention of visitors.
 
-## Accessbility and screen reader video
+## Accessibility and screen reader video
 
-For accessiblity I ensured, everything is accessible without CSS and mostly I tried to concentrate on keyboard controls. 
+For accessibility I ensured, everything is accessible without CSS and mostly I tried to concentrate on keyboard controls. 
 I tested through my website many times with keyboard and came up with some solutions.
-The final quick recording of navigating throug the website is saved in the "screen reader video" folder. 
+The final quick recording of navigating through the website is saved in the "screen reader video" folder. 
 
 One of the obstacles was the Google Maps, as the screen reader would process it and read out "Terms of use", "Report a map error", "button" and so on.. I felt this would be extremely frustrating for screen reader users, so I researched and found `aria-hidden="true"` as the perfect solution. This is demonstrated in my video.
 
-The other difficulty was the Employement section and I was not able to achieve a solution I wanted. The idea was when the popup window opens, a `focus()` property would be set. I was not able to make it work and after reasearch online, unfortunetly I did not find a suitable solution. Luckily as demonstrated in my video, it is still very usable and using the additional `screen-reader-text`, Referemce [16], I could provide clear instructions to the users. This information states that they can close the winow using the escape key, or by clicking on the multiplication symbol (which is read out when highlighted), but the most crucial information is that the information will appear after the logos. 
+The other difficulty was the Employment section and I was not able to achieve a solution I wanted. The idea was when the popup window opens, a `focus()` property would be set. I was not able to make it work and after research online, unfortunately I did not find a suitable solution. Luckily as demonstrated in my video, it is still very usable and using the additional `screen-reader-text`, Reference [16], I could provide clear instructions to the users. This information states that they can close the window using the escape key, or by clicking on the multiplication symbol (which is read out when highlighted), but the most crucial information is that the information will appear after the logos. 
 
 It is worth noting that the screen reader I have used, was not too highly rated and when I went a bit quicker in the video, you might notice parts of the text "skipping". This is nothing to do with the pharagraphs or the headings, but rather the way this screen reader seem to work.  
 
@@ -193,7 +193,7 @@ Most are highlighted in relevant sections.
 - [5] Sitemap generated with XML-Sitemaps:
 https://www.xml-sitemaps.com
 
-- [6] Accessiblity quick references:
+- [6] Accessibility quick references:
 https://webaim.org/resources/quickref/
 
 - [7] keycode Deprecated:
