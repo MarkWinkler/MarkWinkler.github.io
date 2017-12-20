@@ -108,7 +108,7 @@ Overall, I am really happy with the accessibility. The only negative item is the
 
 Another possible extension would be to include more ARIA attributes. Other than these points, I am pleased with the overall result:
 
-<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/accessibility-audit.jpg" align="center"></a>
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/audit-accessibility.jpg" align="center"></a>
 
 
 ## Tests
