@@ -38,13 +38,12 @@ h1 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   animation-name: headerFade;
-  animation-duration: 2s; /* Lenght */
+  animation-duration: 1.2s; /* Lenght */
   animation-iteration-count: 1; /* Play once */
 }
 
 @keyframes headerFade { /* Fade from full opacity to no opacity. */
   0%	{ opacity: 0 }
-  50% { opacity: 0} /* Appear later */
   100% { opacity: 1}
 }
 
@@ -186,7 +185,7 @@ section {
   font-size: 1.3em;
   padding: 0 0.4em;
   animation-name: sectionFade;
-  animation-duration: 3s;	/* Lenght */
+  animation-duration: 1.5s;	/* Lenght */
   animation-iteration-count: 1; /* Play once */
 }
 

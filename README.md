@@ -209,6 +209,9 @@ https://github.com/davidderaedt/tabtospace-extension
 - [14] LASA description used from DMU website:
 http://www.dmu.ac.uk/research/research-faculties-and-institutes/health-and-life-sciences/leicester-academy-for-the-study-of-ageing/leicester-academy-for-the-study-of-ageing.aspx
 
+- [15] Use `rel="noopener"` when `target="_blank"` is used to open links in a new tab.
+https://developers.google.com/web/tools/lighthouse/audits/noopener
+
 ## License Information
 
 Google fonts are license under Sil Open Font License (OFL), which makes them available for use even commercially:

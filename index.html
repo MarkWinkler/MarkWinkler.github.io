@@ -35,7 +35,7 @@ P14172006
   <body>
     <!-- Start of header -->
     <header>
-      <a id="menu" href="#">
+      <a id="menu" href="#" title="Mobile Menu"> <!-- Title for screen readers -->
         <svg> <!-- SVG "mobile menu icon" Reference [3] -->
           <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,
                    10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,
@@ -127,7 +127,7 @@ P14172006
             <td>Web Developer at LASA</td>
             <td rowspan="2"> <!-- A taller row and making logo clickable below, to improve navigation -->
               <a href="https://www.linkedin.com/in/mark-winkler-407018126/"
-                 target="_blank">
+                 target="_blank" rel="noopener"> <!-- Reference [15] -->
                 <img class="linkedin-picture" src="images/linkedin-icon.png"
                      alt="Linkedin Logo">
               </a>
@@ -136,7 +136,7 @@ P14172006
           <tr>
             <td>
               <a class="btn" href="https://www.linkedin.com/in/mark-winkler-407018126/"
-                 target="_blank">View Profile</a>
+                 target="_blank" rel="noopener">View Profile</a> <!-- Reference [15] -->
             </td>
           </tr>
         </table>
@@ -325,6 +325,7 @@ P14172006
 
     <!-- Google Maps personal API key -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH88wretRm1nREBOFTDwAYv6ze-42-qKY&callback=initMap"
+            alt=""
     async defer></script>
 
   </body>
