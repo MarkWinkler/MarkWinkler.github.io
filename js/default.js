@@ -1,10 +1,8 @@
 "use strict"; // JavaScript to be excecuted in strict mode.
 
+// Google Maps API section, Reference [8]
 
-
-<!-- Google Maps API section, Reference [8]-->
-
-  function initMap() {
+  function initMap(){
     var myLocation = {lat: 52.6369, lng: -1.1398};
 
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -20,7 +18,6 @@
   }
 
 
-
 // Mobile navigation from labs
 (function(){
 
@@ -31,7 +28,7 @@
 
   let toggle = false; // hidden at first
   function toggleMenu(){
-    if (toggle) { // true: it's visible
+    if (toggle){ // true: it's visible
       navMenu.classList.remove("show-menu"), // hide it
       toggle = false
       this.style.background = "#c9ffe6" // Original colour.
@@ -42,14 +39,12 @@
       this.style.background = "#7affc1"; // Brighter highlighted colour.
     }
   }
-  
 })();	
   
 
-  
-// Employement Popup Section
+// Employment Popup Section
 
-// LASA Employement Details - Commented
+// LASA Employment Details - Commented
 
 (function(){
   let popup = document.getElementById("popup-id1"); // The div class that includes all the popup content.
@@ -65,31 +60,27 @@
   }
   
   // Close window with x, located on the top right.
-  function spanClose() {
+  function spanClose(){
     popup.classList.remove("show-popup") // Remove class "show-popup", reverting back to display none.
   }
   
   // Close window with escape key
-  window.document.addEventListener('keydown', function(evt) { // Accessibility feature Reference [6] (Keyboard controls)
-    if (evt.key == 'Escape' || evt.keyCode == 27) {	// If escape is pressed or keycode 27 (escape) Reference [7]
+  window.document.addEventListener('keydown', function(evt){ // Accessibility feature Reference [6] (Keyboard controls)
+    if (evt.key == 'Escape' || evt.keyCode == 27){	// If escape is pressed or keycode 27 (escape) Reference [7]
       popup.classList.remove("show-popup")					// Close window.
     } 																							// Keycode is deprecated, but still included it with a logical or
   })																								// in case some users visiting the site will use an old browser.
   
   // Close window by clicking outside it.
   window.document.addEventListener("click", function(event){ // entire window has a click event listener.
-    if (event.target == popup) {						// If clicking outside popup-content 
+    if (event.target == popup){		   				// If clicking outside popup-content 
       popup.classList.remove("show-popup") 	//(on popup which is around it), close it.
     }
-    
-  })
-  
-  
+  }) 
 })();
 
 
-
-// GM Employement Details - reapeat from LASA example
+// GM Employment Details - reapeat from LASA example
 (function(){
   let popup = document.getElementById("popup-id2"); 				// Linking it to the next id.
   let openPopup = document.getElementById("employer2"); 		// Linking it to the next employer.
@@ -102,28 +93,25 @@
     popup.classList.add("show-popup")
   }
   
-  function spanClose() {
+  function spanClose(){
     popup.classList.remove("show-popup")
   }
   
-  window.document.addEventListener('keydown', function(evt) {
-    if (evt.key == 'Escape' || evt.keyCode == 27) {
+  window.document.addEventListener('keydown', function(evt){
+    if (evt.key == 'Escape' || evt.keyCode == 27){
       popup.classList.remove("show-popup")
     }
   })
 
   window.document.addEventListener("click", function(event){
-    if (event.target == popup) {
+    if (event.target == popup){
       popup.classList.remove("show-popup") 
     }
   })
-
-  
 })();
 
 
-
-// CODE Employement Details - repeat from LASA example
+// CODE Employment Details - repeat from LASA example
 (function(){
   let popup = document.getElementById("popup-id3"); 				// Linking it to the next id.
   let openPopup = document.getElementById("employer3"); 		// Linking it to the next employer.
@@ -137,20 +125,19 @@
   }
   
   
-  function spanClose() {
+  function spanClose(){
     popup.classList.remove("show-popup")
   }
   
-  window.document.addEventListener('keydown', function(evt) {
-    if (evt.key == 'Escape' || evt.keyCode == 27) {
+  window.document.addEventListener('keydown', function(evt){
+    if (evt.key == 'Escape' || evt.keyCode == 27){
       popup.classList.remove("show-popup")					
     }
   })
   
   window.document.addEventListener("click", function(event){
-    if (event.target == popup) {
+    if (event.target == popup){
       popup.classList.remove("show-popup") 
     }
   })
-  
 })();

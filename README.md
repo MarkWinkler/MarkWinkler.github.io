@@ -206,6 +206,9 @@ https://webaim.org/techniques/alttext/
 - [13] Tabtospace extension to sort Brackets text editor indentation issues:
 https://github.com/davidderaedt/tabtospace-extension
 
+- [14] LASA description used from DMU website:
+http://www.dmu.ac.uk/research/research-faculties-and-institutes/health-and-life-sciences/leicester-academy-for-the-study-of-ageing/leicester-academy-for-the-study-of-ageing.aspx
+
 ## License Information
 
 Google fonts are license under Sil Open Font License (OFL), which makes them available for use even commercially:

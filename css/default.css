@@ -210,15 +210,10 @@ section {
   animation-iteration-count: 1; /* Play once */
 }
 
-
-
 @keyframes circleImage {
   0%	{ opacity: 0 } /* Opacity */
   100% { opacity: 1}
 }
-
-
-
 
 .introduction {
   font-size: 1.4em;
@@ -292,7 +287,7 @@ td, th {
 
 /******************************
         
-      Employement Section
+      Employment Section
 
 Defining the display of the
 three logos.
@@ -425,6 +420,8 @@ Reference [4]
   cursor: pointer;
 }
 
+
+
 /******************************
           
           Breakpoint
@@ -448,7 +445,7 @@ Reference [1]
   }
   
   #nav-menu {
-  background-color: #00002d;
+    background-color: #00002d;
   }
   
   nav {
@@ -466,7 +463,6 @@ Reference [1]
     justify-content: space-around;
     padding: .5em 0;
   }
-  
     
   .profile-picture {
     width: 110px;
