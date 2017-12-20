@@ -355,7 +355,7 @@ Reference [4]
 .popup-content-lasa {
   background-color: #e8fff4;
   margin: auto;
-  padding: 20px;
+  padding: 1.25em;
   border: 1px solid #888;
   width: 80%;
 }
@@ -363,7 +363,7 @@ Reference [4]
 .popup-content-gm {
   background-color: #e2edff;
   margin: auto;
-  padding: 20px;
+  padding: 1.25em;
   border: 1px solid #888;
   width: 80%;
 }
@@ -371,7 +371,7 @@ Reference [4]
 .popup-content-code {
   background-color: #eaffe0;
   margin: auto;
-  padding: 20px;
+  padding: 1.25em;
   border: 1px solid #888;
   width: 80%;
 }
@@ -447,10 +447,6 @@ Reference [1]
     margin-top: 4em;
   }
   
-  section {
-  padding-top: 4em;
-  }
-  
   #nav-menu {
   background-color: #00002d;
   }
@@ -490,6 +486,7 @@ Reference [1]
   }
   
   section {
+    padding-top: 4em;
     width: 90%;
     margin: 0 auto;
   }
@@ -534,8 +531,8 @@ Reference [1]
   }
   
   .employer-picture {
-    width: 599px;
-    height: 337px;
+    width: 400px;
+    height: 225px;
   }
   
 }
@@ -660,6 +657,24 @@ Reference [1]
   .btn {
     padding: .8em .4em .8em .4em; 
   }
+  
+  .employer-picture {
+    width: 599px;
+    height: 337px;
+  }
+  
+  .popup-content-lasa {
+    width: 70%;
+  }
+
+  .popup-content-gm {
+    width: 70%;
+  }
+
+  .popup-content-code {
+    width: 70%;
+  }
+  
 }
 
 
@@ -698,7 +713,8 @@ Reference [1]
   
   hr {
     width: 63%;
-  }	
+  }
+
 }
 
 
@@ -736,6 +752,18 @@ Reference [1]
   
   hr {
     max-width: 812px;
+  }
+  
+  .popup-content-lasa {
+    width: 70%;
+  }
+
+  .popup-content-gm {
+    width: 70%;
+  }
+
+  .popup-content-code {
+    width: 70%;
   }
   
 }
