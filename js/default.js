@@ -68,8 +68,8 @@
   window.document.addEventListener('keydown', function(evt){ // Accessibility feature Reference [6] (Keyboard controls)
     if (evt.key == 'Escape' || evt.keyCode == 27){	// If escape is pressed or keycode 27 (escape) Reference [7]
       popup.classList.remove("show-popup")					// Close window.
-    } 																							// Keycode is deprecated, but still included it with a logical or
-  })																								// in case some users visiting the site will use an old browser.
+    } // Keycode is deprecated, but still included it with a logical or
+  })  // in case some users visiting the site will use an old browser.
   
   // Close window by clicking outside it.
   window.document.addEventListener("click", function(event){ // entire window has a click event listener.
