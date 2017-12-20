@@ -212,6 +212,9 @@ http://www.dmu.ac.uk/research/research-faculties-and-institutes/health-and-life-
 - [15] Use `rel="noopener"` when `target="_blank"` is used to open links in a new tab.
 https://developers.google.com/web/tools/lighthouse/audits/noopener
 
+- [16] Screen reader text used for employment section
+https://www.coolfields.co.uk/2016/05/text-for-screen-readers-only-updated/
+
 ## License Information
 
 Google fonts are license under Sil Open Font License (OFL), which makes them available for use even commercially:

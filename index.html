@@ -107,9 +107,9 @@ P14172006
       <!-- Location Section -->
       <section>
         <h3 id="location">Location</h3>
-        <h5>Please see the map below for UK location</h5>
+        <h5>Please see the map below for the location of Leicester within the UK.</h5>
         <!-- Google Maps -->
-        <div id="map"></div>
+        <div id="map" aria-hidden="true"></div>
       </section>
       <!-- End of Location Section -->
 
@@ -148,6 +148,10 @@ P14172006
       <section>
         <h3 id="employment">Employment</h3>
         <h5>Click on a logo for more details</h5>
+        <div class="screen-reader-text">
+          Details of specific employement will open up after the logos and they can be closed 
+          easily with the Escape key, or by clicking on multiplication.
+        </div>
 
         <!-- Logos flex grow layout -->
         <div id="logo-section">
@@ -325,7 +329,6 @@ P14172006
 
     <!-- Google Maps personal API key -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH88wretRm1nREBOFTDwAYv6ze-42-qKY&callback=initMap"
-            alt=""
     async defer></script>
 
   </body>

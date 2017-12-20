@@ -316,6 +316,14 @@ party helped code.)
   height: 146px;
 }
 
+/* Used to instruct about popup window and controls. Reference [16] */
+.screen-reader-text { 
+   clip: rect(1px, 1px, 1px, 1px); 
+   height: 1px; 
+   width: 1px; 
+   overflow: hidden; 
+   position: absolute !important;
+}
 
 
 /******************************
