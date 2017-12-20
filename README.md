@@ -60,11 +60,11 @@ Looking at my source code through GitHub pages revealed that whilst my source co
 
 This is an example snippet of my HTML and how it looked in Brackets:
 
-<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/indentation-fix/images/indentation-in-brackets.jpg" align="center"></a>
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/indentation-in-brackets.jpg" align="center"></a>
 
 And this is what it looked like in different editor or on GitHub pages:
 
-<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/indentation-fix/images/indentation-in-other.jpg" align="center"></a>
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/indentation-in-other.jpg" align="center"></a>
 
 The difference, was that it displayed with a lot more space, destroying my code indentations. So, I decided to use branching in order to try to solve this issue. Branching was appropriate, due to having to change every single file, besides this readme. If it did not work out, then I could always go back to the master branch and delete this one, without affecting the code in any way possible.
 
@@ -98,9 +98,18 @@ The final quick recording of navigating through the website is saved in the "scr
 
 One of the obstacles was the Google Maps, as the screen reader would process it and read out "Terms of use", "Report a map error", "button" and so on.. I felt this would be extremely frustrating for screen reader users, so I researched and found `aria-hidden="true"` as the perfect solution. This is demonstrated in my video.
 
-The other difficulty was the Employment section and I was not able to achieve a solution I wanted. The idea was when the popup window opens, a `focus()` property would be set. I was not able to make it work and after research online, unfortunately I did not find a suitable solution. Luckily as demonstrated in my video, it is still very usable and using the additional `screen-reader-text`, Reference [16], I could provide clear instructions to the users. This information states that they can close the window using the escape key, or by clicking on the multiplication symbol (which is read out when highlighted), but the most crucial information is that the information will appear after the logos. 
+The other difficulty was the Employment section and I was not able to achieve a solution I wanted. The idea was when the popup window opens, a `focus()` property would be set. I was not able to make it work and after research online, unfortunately I did not find a suitable solution. Luckily as demonstrated in my video, it is still very usable and using the additional `screen-reader-text`, Reference [16], I could provide clear instructions to the users. This information states that they can close the window using the escape key, or by clicking on the multiplication symbol (which is read out when highlighted), but the most crucial information is that the information will appear after the logos.
 
-It is worth noting that the screen reader I have used, was not too highly rated and when I went a bit quicker in the video, you might notice parts of the text "skipping". This is nothing to do with the pharagraphs or the headings, but rather the way this screen reader seem to work.  
+Another useful feature, which I have not shown in the video is that if you click on any of the menu items, that section becomes active for the screen reader, making keyboard controls easy.
+
+It is worth noting that the screen reader I have used, was not too highly rated and when I went a bit quicker in the video, you might notice parts of the text "skipping". This is nothing to do with the pharagraphs or the headings, but rather the way this screen reader seem to work.
+
+Overall, I am really happy with the accessibility. The only negative item is the modal window not being completely ideal for screen readers, but it is more then managable, as demonstrated in the video.
+
+Another possible extension would be to include more ARIA attributes. Other than these points, I am pleased with the overall result:
+
+<a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/accessibility-audit.jpg" align="center"></a>
+
 
 ## Tests
 
@@ -128,7 +137,7 @@ There was a workaround, that I came up with, which required a lot of excess html
 I have run my CSS through csslint.net, Reference [10]. It has produced just over 30 warnings and no errors.
 Initially, it produced some additional warnings, where the warning was genuine, like defining `text-align: center` twice for instance. Once these have been addressed, I was left with errors to do with ID's within selectors, which is a controversial topic, Reference [11]. Another warning was not to use width and padding together, as it might make elements larger than expected. This is no problem as I have tested element sizes extensively to ensure smooth breakpoints and sensible sizes across different window sizes. 
 
-Error to do with multiple headings (h1, h2, h3), however these are to do with breakpoints and so are the "Too many font-size declarations." Overall the CSS lint "errors" that are left are, in my opinion, nothing to worry about.
+Error to do with multiple headings (h1, h2, h3), however are to do with breakpoints, and so are the "Too many font-size declarations." Overall the CSS lint "errors" that are left are, in my opinion, nothing to worry about.
 
 ### Animation testing
 The animations were tested on a variety of devices and browsers.
@@ -174,9 +183,9 @@ Overall, I covered a lot of different scenarios and they have worked just as int
 
 I have passed my website along to family members. They tested on laptop and phones. The feedback received was positive. They really liked the simplicity of the website. There was no problem with navigation or opening any of the additional windows. 
 
-One of the highlighted elements that they really liked was how much the website changed on larger devices and even on phones if it was tiled 90 degrees. The different colours for menu items was praised and the simplicity of layout and amount of information was liked.
+One of the highlighted elements that they really liked was how much the website changed on larger devices and even on phones, if it was tiled 90 degrees. The different colours for menu items was praised and the simplicity of layout and amount of information was liked.
 
-A negative point highlighted, which I have missed was the main title of the page, was misspelt. Instead of Portfolio it was Portolio. Good thing that this was spotted, as somehow, I have missed that completely. Another negative point was that the `border-radius` animation seemed to be slow. I then deducted that this type of animation is perhaps a bit too much to include and fading in the elements would be enough.
+A negative point highlighted, which I have missed was the main title of the page, was misspelt. Instead of Portfolio it was Portolio. Good thing that this was spotted, as somehow, I have missed that completely. Another negative point was that the `border-radius` animation seemed to be slow. I then deducted that this type of animation is perhaps a bit too much to include and fading in the elements would be enough along with reducing the large size of the image.
 
 ## References
 
