@@ -67,14 +67,14 @@
   // Close window with escape key
   window.document.addEventListener('keydown', function(evt){ // Accessibility feature Reference [6] (Keyboard controls)
     if (evt.key == 'Escape' || evt.keyCode == 27){	// If escape is pressed or keycode 27 (escape) Reference [7]
-      popup.classList.remove("show-popup")					// Close window.
-    } // Keycode is deprecated, but still included it with a logical or
-  })  // in case some users visiting the site will use an old browser.
+      popup.classList.remove("show-popup")  // Close window.
+    }                                       // Keycode is deprecated, but still included it with a logical or
+  })                                        // in case some users visiting the site will use an old browser.
   
   // Close window by clicking outside it.
   window.document.addEventListener("click", function(event){ // entire window has a click event listener.
-    if (event.target == popup){		   				// If clicking outside popup-content 
-      popup.classList.remove("show-popup") 	//(on popup which is around it), close it.
+    if (event.target == popup){               // If clicking outside popup-content 
+      popup.classList.remove("show-popup")    //(on popup which is around it), close it.
     }
   }) 
 })();
@@ -82,8 +82,8 @@
 
 // GM Employment Details - reapeat from LASA example
 (function(){
-  let popup = document.getElementById("popup-id2"); // Linking it to the next id.
-  let openPopup = document.getElementById("employer2"); // Linking it to the next employer.
+  let popup = document.getElementById("popup-id2");         // Linking it to the next id.
+  let openPopup = document.getElementById("employer2");     // Linking it to the next employer.
   let span = document.getElementsByClassName("close2")[0];  // Linking to the next close.
   
   openPopup.addEventListener("click", togglePopup);
@@ -113,9 +113,9 @@
 
 // CODE Employment Details - repeat from LASA example
 (function(){
-  let popup = document.getElementById("popup-id3"); // Linking it to the next id.
-  let openPopup = document.getElementById("employer3"); // Linking it to the next employer.
-  let span = document.getElementsByClassName("close3")[0]; // Linking to the next close.
+  let popup = document.getElementById("popup-id3");          // Linking it to the next id.
+  let openPopup = document.getElementById("employer3");      // Linking it to the next employer.
+  let span = document.getElementsByClassName("close3")[0];   // Linking to the next close.
   
   openPopup.addEventListener("click", togglePopup);
   span.addEventListener("click", spanClose);
