@@ -110,6 +110,8 @@ Another possible extension would be to include more ARIA attributes. Other than 
 
 <a href="url"><img src="https://github.com/MarkWinkler/MarkWinkler.github.io/blob/master/images/audit-accessibility.jpg" align="center"></a>
 
+Reference [18]
+
 
 ## Tests
 
@@ -237,6 +239,9 @@ https://www.coolfields.co.uk/2016/05/text-for-screen-readers-only-updated/
 
 - [17] Hide content from keyboard users, useful for screen readers. Used in this instance for Google Maps:
 https://www.w3.org/TR/html-aria/
+
+- [18] Google audit tool used to check my website accessiblity:
+https://developers.google.com/web/tools/lighthouse/
 
 ## License Information
 
