@@ -82,9 +82,9 @@
 
 // GM Employment Details - reapeat from LASA example
 (function(){
-  let popup = document.getElementById("popup-id2"); 				// Linking it to the next id.
-  let openPopup = document.getElementById("employer2"); 		// Linking it to the next employer.
-  let span = document.getElementsByClassName("close2")[0]; 	// Linking to the next close.
+  let popup = document.getElementById("popup-id2"); // Linking it to the next id.
+  let openPopup = document.getElementById("employer2"); // Linking it to the next employer.
+  let span = document.getElementsByClassName("close2")[0];  // Linking to the next close.
   
   openPopup.addEventListener("click", togglePopup);
   span.addEventListener("click", spanClose);
@@ -113,9 +113,9 @@
 
 // CODE Employment Details - repeat from LASA example
 (function(){
-  let popup = document.getElementById("popup-id3"); 				// Linking it to the next id.
-  let openPopup = document.getElementById("employer3"); 		// Linking it to the next employer.
-  let span = document.getElementsByClassName("close3")[0]; 	// Linking to the next close.
+  let popup = document.getElementById("popup-id3"); // Linking it to the next id.
+  let openPopup = document.getElementById("employer3"); // Linking it to the next employer.
+  let span = document.getElementsByClassName("close3")[0]; // Linking to the next close.
   
   openPopup.addEventListener("click", togglePopup);
   span.addEventListener("click", spanClose);
