@@ -98,7 +98,7 @@ The final quick recording of navigating throug the website is saved in the "scre
 
 One of the obstacles was the Google Maps, as the screen reader would process it and read out "Terms of use", "Report a map error", "button" and so on.. I felt this would be extremely frustrating for screen reader users, so I researched and found `aria-hidden="true"` as the perfect solution. This is demonstrated in my video.
 
-The other difficulty was the Employement section and I was not able to achieve a solution I wanted. The idea was when the popup window opens, a `focus()` property would be set. I was not able to make it work and after reasearch online, unfortunetly I did not find a suitable solution. Luckily as demonstrated in my video, it is still very usable and using the additional `screen-reader-text`, Referemce [16], I could provide clear instructions to the usres.
+The other difficulty was the Employement section and I was not able to achieve a solution I wanted. The idea was when the popup window opens, a `focus()` property would be set. I was not able to make it work and after reasearch online, unfortunetly I did not find a suitable solution. Luckily as demonstrated in my video, it is still very usable and using the additional `screen-reader-text`, Referemce [16], I could provide clear instructions to the users. This information states that they can close the winow using the escape key, or by clicking on the multiplication symbol (which is read out when highlighted), but the most crucial information is that the information will appear after the logos.  
 
 ## Tests
 
