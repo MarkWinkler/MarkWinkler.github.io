@@ -90,6 +90,15 @@ Repetition - The first example of this is the navigation menu on the left which 
 
 Contrast - The biggest contrast is between the navigation menu and main section of the website. This is to ensure, the navigation can be found quickly and it stands out. There is also a slight contrast in the introduction section which aims to capture the attention of visitors.
 
+## Accessbility
+
+For accessiblity I ensured, everything is accessible without CSS and mostly I tried to concentrate on keyboard controls. 
+I tested through my website many times with keyboard and came up with some solutions.
+The final quick recording of navigating throug the website is saved in the "screen reader video" folder. 
+
+One of the obstacles was the Google Maps, as the screen reader would process it and read out "Terms of use", "Report a map error", "button" and so on.. I felt this would be extremely frustrating for screen reader users, so I researched and found `aria-hidden="true"` as the perfect solution. This is demonstrated in my video.
+
+The other difficulty was the Employement section and I was not able to achieve a solution I wanted. The idea was when the popup window opens, a `focus()` property would be set. I was not able to make it work and after reasearch online, unfortunetly I did not find a suitable solution. Luckily as demonstrated in my video, it is still very usable and using the additional `screen-reader-text`, Referemce [16], I could provide clear instructions to the usres.
 
 ## Tests
 
@@ -214,6 +223,9 @@ https://developers.google.com/web/tools/lighthouse/audits/noopener
 
 - [16] Screen reader text used for employment section
 https://www.coolfields.co.uk/2016/05/text-for-screen-readers-only-updated/
+
+- [17] Hide content from keyboard users, useful for screen readers. Used in this instance for Google Maps:
+https://www.w3.org/TR/html-aria/
 
 ## License Information
 
