@@ -19,7 +19,7 @@ P14172006
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/default.css">
-    
+
     <!-- favicon used -->
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
@@ -62,7 +62,7 @@ P14172006
     <!-- Start of main -->
     <main>
       <div id="home" class="center-image">
-        <img class="profile-picture" src="images/Profile-Enhanced.jpg"
+        <img class="profile-picture" src="images/Profile-Enhanced.png"
              alt="Mark Winkler's Profile Picture">
       </div>
       <h1>Mark Winkler - Portfolio</h1>
@@ -73,11 +73,9 @@ P14172006
       <section class="introduction">
         <h2>Hello!</h2>
           <p>
-            My name is Mark. I am a, soon-to-be, Computer Science graduate based in England.
-            I am open for graduate position from 2018 Summer/Autumn.
-          </p>
-          <p>
-            Currently, I am finishing my fourth year of studies whilst working as a Web Developer.
+            My name is Mark.
+            Experienced Software Engineer with a demonstrated history of working in the automotive industry,
+            along with a First-Class Bachelor's Honours degree in Computer Science.
           </p>
       </section>
       <!-- End of Introduction Section -->
@@ -87,18 +85,15 @@ P14172006
       <section>
         <h3 id="about">About</h3>
         <p>
-          I was born in Budapest, Hungary and have moved to England over a decade ago. I am
-          currently completing my final year of Computer Science studies and pursuing a
-          rewarding graduate position from the middle of 2018. I have held many different
-          jobs to support my studies, but the most relevant one was the year-long internship
-          with General Motors during my third year of University. Currently, I am employed
-          part-time as a Web Developer for LASA.
+          I was born in Budapest, Hungary and have moved to England over a decade ago. I am Jaguar Land Rover employee looking after Driver Information Systems.
+          I have held many different jobs to support my studies, the most relevant previous experience was the year-long internship
+          with General Motors during my third year of University as well as a part-time Web Developer during my final year of studies.
         </p>
         <p>
           I have experiences in working within a global team, experience in project management,
           process optimisation, requirement gathering, working with critical systems and
           programming in various programming languages and web development including
-          <strong>C, Java, Perl, HTML, CSS, JavaScript and PHP.</strong>
+          <strong>Python, Java, Perl, HTML, CSS, JavaScript and PHP.</strong>
         </p>
       </section>
       <!-- End of About Section -->
@@ -107,7 +102,7 @@ P14172006
       <!-- Location Section -->
       <section>
         <h3 id="location">Location</h3>
-        <h5>Please see the map below for my current location of Leicester within the UK.</h5>
+        <h5>Please see the map below for my current location of Royal Leamington Spa within the UK.</h5>
         <!-- Google Maps -->
         <div id="map" aria-hidden="true"></div> <!-- Ignores Google Maps, Reference [17] -->
       </section>
@@ -124,7 +119,7 @@ P14172006
             <th></th> <!-- Additional header required to match columns (According to W3C warning) -->
           </tr>
           <tr>
-            <td>Web Developer at LASA</td>
+            <td>HMI/GUI Software Development Engineer at JLR</td>
             <td rowspan="2"> <!-- A taller row and making logo clickable below, to improve navigation -->
               <a href="https://www.linkedin.com/in/mark-winkler-407018126/"
                  target="_blank" rel="noopener"> <!-- Reference [15] -->
@@ -147,11 +142,20 @@ P14172006
       <!-- Employment Section -->
       <section>
         <h3 id="employment">Employment</h3>
-        <h5>Click on a logo for more details</h5>
+        <h5>Click on the logos for further details</h5>
         <div class="screen-reader-text">
           Details of a specific employment is opened by clicking on one of the logos, this description is then accessible right after all three of the logos. It can be closed easily with the Escape key, or by clicking on multiplication.
         </div>
+        <h4>Current</h4>
+        <!-- Logo for current employer -->
+        <div id="logo-section">
+          <a id="employer-current" href="#JLR-employment-details">
+            <img class="logos" id="logoCurrent" src="images/JLR.png"
+                 alt="Jaguar Land Rover Logo">
+          </a>
+        </div>
 
+        <h4>Previous</h4>
         <!-- Logos flex grow layout -->
         <div id="logo-section">
           <a id="employer1" href="#LASA-employment-details">
@@ -173,51 +177,80 @@ P14172006
 
       <!-- Popup Window Section -->
       <section>
+
+        <div class="popup" id="popup-id-current">
+          <div class="popup-content-current">
+            <span class="close-current">&times;</span>
+            <h4>HMI/GUI Software Development Engineer</h4>
+            <h5>Jaguar Land Rover</h5>
+            <h6>Sept 2018 - Present</h6>
+            <hr>
+            Graduate HMI/GUI Software Development Engineer working on next generation instrument clusters across the JLR range. With the following additional placements:
+            <ul>
+              <li>
+                Human Factors working with the discoveribility, cognitive and physical usability of the whole vehicle UI focusing on current and future components.
+              </li>
+              <li>
+                 Electrical Vehicle Architecture (EVA3) software placement working on the future vehicles focusing on connected cars.
+              </li>
+              <li>
+                Manufacturing placement in Solihull FA1, working in a fast-paced environment.
+              </li>
+              <li>
+                Pilot operations working on various prototype vehicles.
+              </li>
+              <li>
+                Vehicle Launch working in Slovakia, responsible for several aspects of the launch of the iconic Land Rover Defender.
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <!-- LASA Employment Details -->
         <div class="popup" id="popup-id1">
           <div class="popup-content-lasa">
             <span class="close">&times;</span>
             <h4>Web Developer</h4>
             <h5>Leicester Academy for the Study of Ageing</h5>
-            <h6>Sept 2017 - Present</h6>
+            <h6>Sept 2017 - Mar 2018</h6>
             <hr>
               <p>
                 As part of this part-time internship, I am responsible for requirement gathering,
                 the creation and the maintenance of a website for a newly founded Academy.
               </p>
               <p>
-                The website is currently being built with Bootstrap and a mobile first approach. 
+                The website is currently being built with Bootstrap and a mobile first approach.
                 To find out more about the company, please see the description below.
               </p>
               <p> <!-- Text from DMU LASA description, Reference [14] -->
-                Within Leicester, Leicestershire and Rutland (LLR) there is a need for an integrated 
-                collaborative multidisciplinary approach to the needs of older people, which is 
+                Within Leicester, Leicestershire and Rutland (LLR) there is a need for an integrated
+                collaborative multidisciplinary approach to the needs of older people, which is
                 underpinned by strong evidence based focus on person-centred outcomes and experience.
               </p>
               <p>
-                De Montfort University along with the two local healthcare providers (University 
-                Hospitals of Leicester and Leicestershire Partnership Trust) and Age UK have 
-                established Leicester Academy for the Study of Ageing utilising the expertise and 
-                resource from the individual institutions to ensure the LLR community is optimally 
-                equipped to meet the challenge to provide evidence based integrated care to the 
+                De Montfort University along with the two local healthcare providers (University
+                Hospitals of Leicester and Leicestershire Partnership Trust) and Age UK have
+                established Leicester Academy for the Study of Ageing utilising the expertise and
+                resource from the individual institutions to ensure the LLR community is optimally
+                equipped to meet the challenge to provide evidence based integrated care to the
                 population of LLR.
               </p>
               <p>
-                The Academy was conceived as a holistic approach to the issues in our area concerning 
-                older people, covering both health and social care. We hope to approach this through 
-                our abilities to influence research, education and service change. The Academy aims to 
-                improve outcomes for older people and those that care for them, through translational, 
-                interdisciplinary research and educational projects that take a person-centred, whole 
-                system perspective. Our projects and our research will take a global perspective, but 
+                The Academy was conceived as a holistic approach to the issues in our area concerning
+                older people, covering both health and social care. We hope to approach this through
+                our abilities to influence research, education and service change. The Academy aims to
+                improve outcomes for older people and those that care for them, through translational,
+                interdisciplinary research and educational projects that take a person-centred, whole
+                system perspective. Our projects and our research will take a global perspective, but
                 will seek to maximise benefits for the people of Leicester, Leicestershire &amp; Rutland.
               </p>
               <p>
                 The vision of the Academy is to promote active aging, defined by the World Health
-                Organisation as &ldquo;the process of optimising opportunities for health, participation 
-                and security in order to enhance quality of life as people age. Active ageing applies to 
-                both individuals and groups. It allows people to realise their potential for physical, 
-                social, and mental well-being throughout their lives and to participate in society 
-                according to their needs, desires and capacities, while providing them with adequate 
+                Organisation as &ldquo;the process of optimising opportunities for health, participation
+                and security in order to enhance quality of life as people age. Active ageing applies to
+                both individuals and groups. It allows people to realise their potential for physical,
+                social, and mental well-being throughout their lives and to participate in society
+                according to their needs, desires and capacities, while providing them with adequate
                 protection, security and care when they require assistance&rdquo;
             </p>
           </div>
@@ -242,7 +275,7 @@ P14172006
               <p>
                 Primary areas of responsibility:
               </p>
-            
+
               <ul>
                 <li>
                   Responsible for development of the Electronic Document Warehousing within the Global
@@ -270,7 +303,7 @@ P14172006
                   Project participation within the Common Sales Platform area.
                 </li>
               </ul>
-            
+
             <div class="center-image">
               <img class="employer-picture" src="images/GM-Vauxhall.png"
                    alt="Standing next to new Vauxhall Mokka x car release,
@@ -288,8 +321,8 @@ P14172006
             <h6>Sept 2014 - Jun 2015</h6>
             <hr>
               <p>
-                Part time work during first year of University. This role was a 16 hours part time 
-                job that was taken on to fund my studies. It was great to work for a large student 
+                Part time work during first year of University. This role was a 16 hours part time
+                job that was taken on to fund my studies. It was great to work for a large student
                 accommodation that I was actually staying at. My main responsibility was being in
                 charge of the online chat service, which meant that a lot of information had to be
                 memorised. Taking deliveries was the other primary difficulty, which turned out to
@@ -298,7 +331,7 @@ P14172006
               <p>
                 The roles and responsibilities included:
               </p>
-            
+
               <ul>
                 <li>
                   Being in charge of online customer service.
@@ -313,7 +346,7 @@ P14172006
                   Aiding in the setup and the running of events.
                 </li>
               </ul>
-            
+
           </div>
         </div>
       </section>
