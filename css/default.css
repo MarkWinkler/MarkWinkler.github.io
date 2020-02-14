@@ -1,8 +1,8 @@
 /******************************
-        
+
         Global Styles
 
-Overall styles for 
+Overall styles for
 Mark Winkler Portfolio.
 
 ******************************/
@@ -23,7 +23,7 @@ main {
 }
 
 /******************************
-        
+
         Headings
 
 Changing default heading
@@ -84,7 +84,7 @@ hr {
 
 
 /******************************
-        
+
         Navigation
 
 Defining the overall
@@ -93,7 +93,7 @@ navigation for the page.
 ******************************/
 
 svg {
-  height: 32px; 
+  height: 32px;
   width: 32px;
 }
 
@@ -171,7 +171,7 @@ nav li:last-child a {
 
 
 /******************************
-        
+
   Introduction/Home Section
 
 Overal section definition,
@@ -225,7 +225,7 @@ section {
 
 
 /******************************
-        
+
       Location Section
 
     Using the Google API.
@@ -241,7 +241,7 @@ section {
 
 
 /******************************
-        
+
         Contact Section
 
 Table and "button" used
@@ -274,7 +274,7 @@ td, th {
   text-decoration: none;
   background-color: #0077B5;
   color: #fcfcfc;
-  padding: .6em .2em .6em .2em; 
+  padding: .6em .2em .6em .2em;
   border-radius: 5%;
 }
 
@@ -285,7 +285,7 @@ td, th {
 
 
 /******************************
-        
+
       Employment Section
 
 Defining the display of the
@@ -317,17 +317,17 @@ party helped code.)
 }
 
 /* Used to instruct about popup window and controls. Reference [16] */
-.screen-reader-text { 
-   clip: rect(1px, 1px, 1px, 1px); 
-   height: 1px; 
-   width: 1px; 
-   overflow: hidden; 
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
    position: absolute !important;
 }
 
 
 /******************************
-        
+
         Popup Section
 
 Most reworked to fit
@@ -372,6 +372,14 @@ Reference [4]
 
 .popup-content-code {
   background-color: #eaffe0;
+  margin: auto;
+  padding: 1.25em;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.popup-content-current {
+  background-color: #e8fff4;
   margin: auto;
   padding: 1.25em;
   border: 1px solid #888;
@@ -427,10 +435,24 @@ Reference [4]
   cursor: pointer;
 }
 
+.close-current {
+  color: #aaaaaa;
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.close-current:hover,
+.close-current:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 /******************************
-          
+
           Breakpoint
 
   Larger than Mobile devices
@@ -440,21 +462,21 @@ Reference [1]
 ******************************/
 
 @media screen and (min-width: 500px) {
-  
+
   header {
     padding: 0;
   }
-  
+
   main {
     float: right;
     width: 68%;
     margin-top: 4em;
   }
-  
+
   #nav-menu {
     background-color: #00002d;
   }
-  
+
   nav {
     display: block;
     overflow-x: hidden;
@@ -462,7 +484,7 @@ Reference [1]
     height: 100%;
     width: 30%;
   }
-  
+
   nav a {
     display: flex;
     font-size: 1.2em;
@@ -470,167 +492,167 @@ Reference [1]
     justify-content: space-around;
     padding: .5em 0;
   }
-    
+
   .profile-picture {
     width: 110px;
     height: 124px;
   }
-  
+
   h1 {
     font-size: 1.7em;
   }
-  
+
   h2 {
     font-size: 1.5em;
   }
-  
+
   h3 {
     font-size: 1.15em;
   }
-  
+
   section {
     padding-top: 4em;
     width: 90%;
     margin: 0 auto;
   }
-  
+
   hr {
     width: 95%;
   }
-  
+
   .introduction-title {
     margin-top: 4em;
   }
-  
+
    #menu {
     display: none;
   }
-  
+
   #map {
     width: 100%;
   }
-  
+
   td, th {
     font-size: 1.1em;
   }
-  
+
   .btn {
     font-size: 1.05em;
   }
-  
+
   .linkedin-picture {
     width: auto;
     height: auto;
   }
-  
+
   #logo-section {
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
   }
-  
+
   .logos {
     width: 90%;
   }
-  
+
   .employer-picture {
     width: 400px;
     height: 225px;
   }
-  
+
 }
 
 
 
 /******************************
-          
+
           Breakpoint
 
           Tablet Size
             768px
-  
+
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 768px) {
-  
+
   main {
     width: 78%;
   }
-  
+
   nav {
     width: 20%;
   }
-  
+
   nav a {
   font-size: 1.4em;
   }
-  
+
   .profile-picture {
     width: 120px;
     height: 135px;
   }
-  
+
   h1 {
     font-size: 1.9em;
   }
-  
+
   h2 {
     font-size: 1.6em;
   }
-  
+
   h3 {
     font-size: 1.3em;
   }
-  
+
   section {
     width: 60%;
   }
-  
+
   hr {
     width: 65%;
   }
-  
+
   td, th {
     font-size: 1.2em;
   }
-  
+
   .btn {
     font-size: 1.1em;
   }
-  
+
   .logos {
     width: 100%;
   }
-  
+
 }
 
 
 
 /******************************
-          
+
           Breakpoint
 
           Laptop Size
             1024px
-  
+
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 1024px) {
-  
+
   main {
     width: 78%;
   }
-  
+
   nav {
     width: 20%;
   }
-  
+
   nav a {
   font-size: 1.4em;
   }
-  
+
   .profile-picture {
     width: 140px;
     height: 158px;
@@ -639,33 +661,33 @@ Reference [1]
   h1 {
     font-size: 2em;
   }
-  
+
   h2 {
     font-size: 1.7em;
   }
-  
+
   section {
     width: 60%;
   }
-  
+
   hr {
     width: 65%;
   }
-  
-  
+
+
   td, th {
     font-size: 1.3em;
   }
-  
+
   .btn {
-    padding: .8em .4em .8em .4em; 
+    padding: .8em .4em .8em .4em;
   }
-  
+
   .employer-picture {
     width: 599px;
     height: 337px;
   }
-  
+
   .popup-content-lasa {
     width: 70%;
   }
@@ -677,43 +699,43 @@ Reference [1]
   .popup-content-code {
     width: 70%;
   }
-  
+
 }
 
 
 
 /******************************
-          
+
           Breakpoint
 
     Small monitor/laptop Size
             1366px
-  
+
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 1366px) {
-  
+
   main {
     width: 82%;
   }
-  
+
   nav {
     width: 16%;
   }
-  
+
   nav a {
   font-size: 1.5em;
   }
-  
+
   h1 {
     font-size: 2.1em;
   }
-  
+
   section {
     width: 58%;
   }
-  
+
   hr {
     width: 63%;
   }
@@ -723,40 +745,40 @@ Reference [1]
 
 
 /******************************
-          
+
           Breakpoint
 
           HD Size
           1920px
-  
+
 Reference [1]
 ******************************/
 
 @media screen and (min-width: 1920px) {
-  
+
   main {
     width: 82%;
   }
-  
+
   nav {
     width: 12%;
   }
   nav a {
   font-size: 1.7em;
   }
-  
+
   h1 {
     font-size: 2.2em;
   }
-  
+
   section {
     max-width: 800px;
   }
-  
+
   hr {
     max-width: 812px;
   }
-  
+
   .popup-content-lasa {
     width: 70%;
   }
@@ -768,5 +790,5 @@ Reference [1]
   .popup-content-code {
     width: 70%;
   }
-  
+
 }
